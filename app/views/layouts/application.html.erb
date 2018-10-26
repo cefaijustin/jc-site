@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<%= csrf_meta_tags %>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
+		<link 
+		rel="stylesheet"
+		href="prism-atom-dark.css"
+		type="text/css"
+		media="screen"
+		/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+		<script type="text/javascript" src="prism.js"></script>
+		<script type="text/javascript" src="prism.ruby.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+        <title>Justin Cefai</title>
+        <meta name="description" content="Justin Cefai is a software engineer specializing in full-stack development.  He has experience with Ruby, Rails, JavaScript, and building web applications.">
+
+	</head>
+
+	<body>
+		<%= yield %>
+	</body>
+</html>
+
+<script type="text/javascript">
+	var $root = $('html, body');
+
+	$('a[href^="#"]').click(function () {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 400);
+
+    return false;
+});
+
+
+</script>

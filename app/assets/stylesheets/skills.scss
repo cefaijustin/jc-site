@@ -1,0 +1,149 @@
+
+.background-skills {
+  background-color: #f2f9f9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.tools-header {
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+.tools-header h3 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.toolbox {
+  display: flex;                 
+  flex-direction: row;           
+  flex-wrap: nowrap;              
+  justify-content: space-between;
+  margin: 25px 200px;
+}
+
+.toolbox-content {
+  padding: 20px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+i.fas {
+  font-size: 95px;
+  color: #1172c1;
+  text-shadow: 1px 1px 1px black;
+}
+
+.hr-tools {
+  color: black;
+  size: 3px solid;
+  width: 250px;
+  top:45%;
+  left:50%;
+  width:0%;
+  animation: line 0.5s linear forwards;
+}
+
+.clear {
+	clear: both;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list button {
+  border-radius: 1%;
+  border: 2px solid black;
+  width: 140px;
+  height: auto;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 20px;
+  transition: all ease-in-out 200ms;
+}
+
+.skills-list button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+.onclick-menu {
+    position: relative;
+    display: inline-block;
+
+}
+
+.onclick-menu:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none;
+    outline:0;
+
+}
+.onclick-menu:focus .onclick-menu-content {
+    /*  opacity is 1 in opened state (see below) */
+    opacity: 1;
+    visibility: visible;
+
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto;
+        z-index: 1009;   
+}
+.onclick-menu-content {
+    display: block;
+    margin-left: -80px;
+    position: absolute;
+
+
+    /* use opacity to fake immediate toggle */
+    opacity: 1;
+}
+
+
+.skills-and-tools {
+	max-width: 400px;
+	margin: 40px auto;
+}
+
+.icons {
+	text-align: center;
+} 
+
+.icon {
+	margin: 30px 0;
+}
+
+.to-top{
+  content:'▲';
+  color:black;
+  display:inline-flex;/* or block */
+  position:relative;
+  transition:all .2s ease-out;
+}
+.to-top:before{
+  content:'▲';
+  position:absolute;
+  width:1.4em;
+  transition:transform .2s ease-in;
+}
+.to-top:hover{
+  color:#ffde5e;
+  opacity: .8;
+}
+.to-top:hover:before{
+  transform: scale(1.2);
+}

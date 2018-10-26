@@ -1,0 +1,281 @@
+
+.background-contact {
+	background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-logo {
+	float: left;
+	padding-left: 0px;
+	padding-top: 15px;
+}
+
+.thanks {
+	width: 80%;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.thanks p {
+	font-weight: lighter;
+	font-size: 20px;
+	color: white;
+	float: none;
+	text-align: center;
+}
+
+.say-hello {
+	display: block;
+	position: relative;
+	width: 350px;
+	height: 300px;
+	top: 20%;
+	left: 43%;
+	margin-top: -50px;
+  margin-left: -100px;
+	background-color: black;
+}
+
+.letter {
+	padding-top: 35px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	font-weight: normal;
+}
+
+.letter:hover {
+	text-shadow: 1px 1px 1px #228fe8;
+}
+
+.full-width-contact {
+  padding: 0;
+  margin: 8px 6px 6px 6px;
+}
+
+/*
+
+MODAL BELOW
+
+*/
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 30%;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+
+/* Other
+ * =============================== */
+body {
+  font: 1/1.5em sans-serif;
+  text-align: center;
+}
+
+.btn {
+	margin-top: 120px;
+  cursor: pointer;
+  background: black;
+  display: inline-block;
+  padding: none;
+  color: #fff;
+  border-radius: 2px;
+  transition: all ease-in-out 100ms;
+}
+
+.btn:hover,
+.btn:focus {
+  background: black;
+}
+
+.btn:active {
+  background: black;
+  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+}
+
+.btn--blue {
+  background: black;
+  width: 60%;
+  height: auto;
+  transform: scale(2.3);
+  transition: all ease-in-out 200ms;
+} 
+
+.btn--blue:hover,
+.btn--blue:focus {
+  background-color: #1a1a1a;
+}
+
+.btn--blue:active {
+  background: black;
+}
+
+p img {
+  max-width: 200px;
+  height: auto;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+
+/*
+
+====================================================
+
+*/
+
+.social-links {
+	position: relative;
+	margin: 0 auto;
+	display: table;
+	padding-bottom: 20px;
+	padding-top: 110px;
+}
+
+.social-links ul {
+	list-style: none;
+	text-decoration: none;  
+}
+
+.social-links li {
+	display: inline-block;
+	float: left;
+	padding-right: 40px;
+	margin-right: 5px;
+}
+
+.social-links a {
+	font-size: 24px;
+	color: #1172c1;
+	font-weight: normal;
+}
+
+.social-links a:hover {
+	color: #228fe8;
+}
+
+.arrow
+{
+  position: relative;
+  bottom: -2rem;
+  left: 50%;
+  margin-left:-20px;
+  width: 38px;
+  height: 38px;
+  background-size: contain;
+}
+
+.bounce {
+	animation: bounce 1.8s infinite ;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+.hand {
+	height: 30px;
+	width: 30px;
+}
