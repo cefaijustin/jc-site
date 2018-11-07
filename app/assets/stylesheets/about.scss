@@ -123,11 +123,6 @@
 	transition: all ease-in-out 250ms;
 }
 
-.jclogo:hover {
-	opacity: 0.8;
-	transform: scale(.95);
-}
-
 .nav-container {
 	width: 95%;
 }
@@ -307,10 +302,6 @@ WITH DESCTRIPTION ADJACENT
 }
 .to-top:hover{
 	color:#ffde5e;
-	opacity: .8;
-}
-.to-top:hover:before{
-	transform: scale(1.2);
 }
 
 .footer {
