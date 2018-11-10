@@ -34,9 +34,6 @@
   color: white;
   padding-top:1.8em;
   display: block;/* or block */
-  position: fixed;
-  top: 40px;
-  right: 60px;
   border-color:white;
   text-decoration:none;
   transition:all .3s ease-out;
@@ -47,8 +44,6 @@
   content:'▲';
   font-size:.9em;
   position: absolute;
-  top:0;
-  left:50%;
   margin-left:-.7em;
   border:solid .13em white;
   border-radius:10em;
