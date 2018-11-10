@@ -129,3 +129,21 @@ i.fas {
 	margin: 30px 0;
 }
 
+/* MEDIA SCREEN SIZES */
+@media screen and (max-width: 1200px) {
+  .toolbox {
+    position: relative;
+    margin: 5px auto;
+    width: 80%;
+    height: auto;
+  }
+  .toolbox-content {
+    width: auto;
+    margin: 5px auto;
+  }
+  
+  .toolbox-content {
+    font-size: 90%;
+  }
+}
+
