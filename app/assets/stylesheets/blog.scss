@@ -94,47 +94,6 @@ p {
 	text-align: center;
 }
 
-.to-top{
-	content:'▲';
-	color:black;
-	display:inline-flex;/* or block */
-	position:relative;
-	transition:all .2s ease-out;
-}
-.to-top:before{
-	content:'▲';
-	position:absolute;
-	width:1.4em;
-	transition:transform .2s ease-in;
-}
-.to-top:hover{
-	color:#ffde5e;
-	opacity: .8;
-}
-.to-top:hover:before{
-	transform: scale(1.2);
-}
-
-.to-top{
-	content:'▲';
-	color:black;
-	display:inline-flex;/* or block */
-	position:relative;
-	transition:all .2s ease-out;
-}
-.to-top:before{
-	content:'▲';
-	position:absolute;
-	width:1.4em;
-	transition:transform .2s ease-in;
-}
-.to-top:hover{
-	color:#ffde5e;
-	opacity: .8;
-}
-.to-top:hover:before{
-	transform: scale(1.2);
-}
 
 
 
