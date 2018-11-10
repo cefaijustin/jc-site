@@ -12,8 +12,8 @@
 
 .contact-logo {
 	float: left;
-	padding-left: 0px;
-	padding-top: 15px;
+  margin-top: -15px;
+  margin-left: 0px;
 }
 
 .thanks {
@@ -33,7 +33,7 @@
 .to-top{
   color: white;
   padding-top:1.8em;
-  display: block;/* or block */
+  display: block;
   border-color:white;
   text-decoration:none;
   transition:all .3s ease-out;
