@@ -23,10 +23,12 @@
 
 	<div class="typebox" style="min-height: 119px;">
 	  <div id="typed-strings">
-	  <h3 class="type-active"><strong style="font-size: 20px; line-height: 1.5em;">...and I'm a Full Stack Web Developer.<br>Have a look around!&nbsp; <br><br><a href="#web-apps"><%= image_tag "down-arrow.png", class: "down-arrow"%></a></strong></h3>
+	  <h3 class="type-active"><strong style="font-size: 20px; line-height: 1.5em;">...and I'm a Full Stack Web Developer.<br>Have a look around!&nbsp; </strong></h3>
 	 </div> 
 	 <span id="typed"></span>	
-	 <br />
+	</div>
+	<div id="down-arrow">
+		<a href="#web-apps"><%= image_tag "down-arrow.png", class: "down-arrow"%>
 	</div>
 
 <div class="footer">
@@ -57,7 +59,10 @@
 		startDelay: 1000,
 		typeSpeed: 30,
 		backSpeed: 20,
-		});
+		onComplete: function(self) {  
+  		$('a[href="#web-apps"]').click(scrollToHash) 
+		}
+	});																							 
 	document.querySelectorAll(".typed-cursor")[0].style.display = "none";
 
 </script>

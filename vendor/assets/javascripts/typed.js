@@ -6,6 +6,12 @@ var options = {
   callback: function () {
                 $(".typed-cursor").hide();
             }
+            onComplete: function(self) {  
+  		$('a[href="#web-apps"]').click(scrollToHash) 
+		}
+
 }
 
+
 var typed = new Typed(".element", options);
+
