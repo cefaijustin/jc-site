@@ -31,11 +31,11 @@
 	opacity: 0;
 	width: 25px;
 	height: 25px;
-	transition: all ease-in-out 200ms;	
-	-moz-animation: fadein 400ms ease-in forwards; /* Firefox */
-    -webkit-animation: fadein 400ms ease-in forwards; /* Safari and Chrome */
-    -o-animation: fadein 400ms ease-in forwards; /* Opera */
-    animation: fadein 400ms ease-in forwards;
+	transition: all ease-in-out 100ms;	
+	-moz-animation: fadein 100ms ease-in forwards; /* Firefox */
+    -webkit-animation: fadein 100ms ease-in forwards; /* Safari and Chrome */
+    -o-animation: fadein 100ms ease-in forwards; /* Opera */
+    animation: fadein 100ms ease-in forwards;
     -moz-animation-delay: 3.8s;
     -webkit-animation-delay: 3.8s;
     -o-animation-delay: 3.8s;
