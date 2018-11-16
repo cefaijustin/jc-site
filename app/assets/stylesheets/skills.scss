@@ -130,7 +130,11 @@ i.fas {
 }
 
 /* MEDIA SCREEN SIZES */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 750px) {
+
+  .background-skills {
+    margin-top: 225% !important;
+  }
   .toolbox {
     position: relative;
     margin: 5px auto;

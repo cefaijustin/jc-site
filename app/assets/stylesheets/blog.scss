@@ -27,7 +27,8 @@
 .blog-box {
 	display: block;
 	width: 100%;
-	margin-bottom: 150px;
+	height: 100%;
+	margin-bottom: 100%;
 
 }
 
@@ -35,6 +36,7 @@
 	margin-right:auto;
   margin-left:auto;
 	width: 42.5%;
+	height: auto;
 	margin-top: 60px;
 }
 
@@ -42,7 +44,7 @@
 	opacity: 1;
   margin-right:auto;
   margin-left:auto;
-	width: 40%;
+	width: 42.5%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 
@@ -94,6 +96,17 @@ p {
 	text-align: center;
 }
 
+@media (min-width: 401px) and (max-width: 800px) {
+  .grid {
+  	width: 80% !important; 
+  	margin-bottom: 5% !important;
+  	height: auto !important;
+  }
+
+  .blog-box {
+  	margin-bottom: 800px !important;
+  }
+}
 
 
 
