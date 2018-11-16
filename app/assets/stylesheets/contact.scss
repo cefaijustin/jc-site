@@ -64,8 +64,8 @@
 .say-hello {
 	display: block;
 	position: relative;
-	width: 350px;
-	height: 300px;
+	width: 35%;
+	height: 30%;
 	top: 20%;
 	left: 43%;
 	margin-top: -50px;
@@ -87,6 +87,7 @@
 }
 
 .full-width-contact {
+  width: 120%;
   padding: 0;
   margin: 8px 6px 6px 6px;
 }
@@ -220,7 +221,7 @@ body {
 
 .btn--blue {
   background: black;
-  width: 60%;
+  width: 80%;
   height: auto;
   transform: scale(2.3);
   transition: all ease-in-out 200ms;
@@ -305,4 +306,27 @@ p img {
   }
 }
 
+@media (min-width: 250px) and (max-width: 750px) { 
 
+  .background-contact {
+    margin-top: 20%;
+  }
+
+  .full-width-contact {
+    width: 100%;
+  }
+  
+.say-hello {
+  display: block;
+  position: relative;
+  width: 40%;
+  height: 30%;
+  top: 18%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  background-color: black;
+}
+    
+
+}

@@ -491,7 +491,10 @@ figure.effect-slideright:hover h2 {
 }
 
 /* MEDIA SCREEN SIZES */
-@media screen and (max-width: 1200px) {
+@media (min-width: 250px) and (max-width: 1200px) {
+  .background-web {
+    padding: 5px !important;
+  }
   .grid figure {
     width: auto;
     float: left;
@@ -502,7 +505,10 @@ figure.effect-slideright:hover h2 {
     font-size: 90%;
   }
 }
-@media screen and (max-width: 900px) {
+@media (min-width: 250px) and (max-width: 900px) {
+  .background-web {
+    padding: 5px !important;
+  }
   
   .grid figure {
     width: 100%;
@@ -515,12 +521,20 @@ figure.effect-slideright:hover h2 {
     font-size: 90%;
   }
 }
-@media screen and (max-width: 664px) {
+@media (min-width: 250px) and (max-width: 664px) {
   .grid .one-half {
     width: 100%;
   }
   .grid figure {
     width: 100%;
+  }
+
+  .h3-web {
+    font-size: 35px;
+  }
+
+  .background-web {
+    padding: 5px !important;
   }
 }
 

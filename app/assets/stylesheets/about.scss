@@ -366,3 +366,38 @@ WITH DESCTRIPTION ADJACENT
 	margin-top: -1px;
 	padding-right: 20px;
 }
+
+@media (min-width: 250px) and (max-width: 750px) { 
+
+	.about-container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.typebox {
+		width: 90%;
+	}
+	.about-top h3 {
+		font-size: 40px;
+	}
+
+	.about-top h1 {
+		font-size: 90px;
+	}
+
+	.type-active h3 {
+		font-size: 10px !important;
+	}
+
+	.nav-container li {
+		display: none;
+	}
+
+	.footer {
+		width: 100%;
+	}
+}
+
+
+
+

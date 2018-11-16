@@ -41,7 +41,7 @@
 }
 
 i.fas {
-  font-size: 95px;
+  font-size: 600%;
   color: #1172c1;
   text-shadow: 1px 1px 1px black;
 }
@@ -130,24 +130,10 @@ i.fas {
 }
 
 /* MEDIA SCREEN SIZES */
-@media screen and (max-width: 750px) {
 
-  .background-skills {
-    margin-top: 225% !important;
-  }
-  .toolbox {
-    position: relative;
-    margin: 5px auto;
-    width: 80%;
-    height: auto;
-  }
-  .toolbox-content {
-    width: auto;
-    margin: 5px auto;
-  }
-  
-  .toolbox-content {
-    font-size: 90%;
+@media (min-width: 351px) and (max-width: 900px) {
+  .background-skills { 
+    display: none;
   }
 }
 
