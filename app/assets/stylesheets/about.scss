@@ -94,7 +94,7 @@
 	margin-right: auto;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-	margin-top: 30px;
+	margin-top: 20px;
 	font-weight: bold; 
 	color: black;
 	font-size: 50px; 
@@ -117,6 +117,8 @@
 .type-active {
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 20px !important; 
+	line-height: 1.5em !important;
 }
 
 .jclogo {
@@ -367,6 +369,15 @@ WITH DESCTRIPTION ADJACENT
 	padding-right: 20px;
 }
 
+@media (min-width: 250px) and (max-width: 600px) {  
+.about-top h3 {
+	margin-top: 25%;
+		font-size: 35px;
+	}
+
+}
+
+
 @media (min-width: 250px) and (max-width: 750px) { 
 
 	.about-container {
@@ -378,7 +389,7 @@ WITH DESCTRIPTION ADJACENT
 		width: 90%;
 	}
 	.about-top h3 {
-		font-size: 40px;
+		font-size: 35px;
 	}
 
 	.about-top h1 {
@@ -400,6 +411,19 @@ WITH DESCTRIPTION ADJACENT
 	.down-arrow {
 		padding-top: 20px;
 	}
+
+	.jclogo {
+	float: left;
+	padding-top: 4px; 
+	padding-left: 2px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	margin-left: 20px;
+	margin-top: 20px;
+	height: 25px;
+	width: 30px;
+	transition: all ease-in-out 250ms;
+}
 }
 
 
