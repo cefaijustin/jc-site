@@ -87,7 +87,7 @@
 }
 
 .full-width-contact {
-  width: 120%;
+  width: 100%;
   padding: 0;
   margin: 8px 6px 6px 6px;
 }
@@ -200,6 +200,9 @@ body {
 
 .btn {
 	margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   cursor: pointer;
   background: black;
   display: inline-block;
@@ -221,7 +224,6 @@ body {
 
 .btn--blue {
   background: black;
-  width: 80%;
   height: auto;
   transform: scale(2.3);
   transition: all ease-in-out 200ms;

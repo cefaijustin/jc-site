@@ -5,7 +5,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 30px 60px 80px 60px;
+  width: 100%;
+  height: auto;
 }
 
 .box {
@@ -22,6 +23,13 @@
      -moz-box-sizing: border-box; /* Firefox, other Gecko */
        -o-box-sizing: border-box; /* Opera */
           box-sizing: border-box;
+}
+
+.app-container {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
 }
 
 .full-width-web {
@@ -492,23 +500,22 @@ figure.effect-slideright:hover h2 {
 
 /* MEDIA SCREEN SIZES */
 @media (min-width: 250px) and (max-width: 1200px) {
+
   .background-web {
-    padding: 5px !important;
+    width: 100%;
+    height: auto !important;
   }
+
   .grid figure {
     width: auto;
     float: left;
   }
-  .grid figure img {
-  }
+
   .grid figure figcaption {
     font-size: 90%;
   }
 }
 @media (min-width: 250px) and (max-width: 900px) {
-  .background-web {
-    padding: 5px !important;
-  }
   
   .grid figure {
     width: 100%;
@@ -531,10 +538,6 @@ figure.effect-slideright:hover h2 {
 
   .h3-web {
     font-size: 35px;
-  }
-
-  .background-web {
-    padding: 5px !important;
   }
 }
 
