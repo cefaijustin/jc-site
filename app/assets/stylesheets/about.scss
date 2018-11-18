@@ -385,8 +385,13 @@ WITH DESCTRIPTION ADJACENT
 }
 
 .footer {
-		width: 100%;
-		position: fixed !important;
+	 position: fixed !important;
+   left: 0px;
+   bottom: 0px;
+   height: 45px;
+   width: 100%;
+   background:#999;
+   z-index: 9999;
 	}
 
 	.made-by p {
@@ -422,8 +427,13 @@ WITH DESCTRIPTION ADJACENT
 	}
 
 	.footer {
-		width: 100%;
-		position: fixed !important;
+	 position: fixed !important;
+   left: 0px;
+   bottom: 0px;
+   height: 45px;
+   width: 100%;
+   background:#999;
+   z-index: 9999;
 	}
 
 	.down-arrow {
