@@ -369,6 +369,14 @@ WITH DESCTRIPTION ADJACENT
 	padding-right: 20px;
 }
 
+@media (min-width: 250px) and (max-width: 900px) { 
+
+	.nav-container li {
+		display: none;
+	}
+
+ }
+
 @media (min-width: 250px) and (max-width: 600px) {  
 .about-top h3 {
 	margin-top: 15%;
@@ -420,10 +428,6 @@ WITH DESCTRIPTION ADJACENT
 
 	.type-active h3 {
 		font-size: 10px !important;
-	}
-
-	.nav-container li {
-		display: none;
 	}
 
 	.footer {
