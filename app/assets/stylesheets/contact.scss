@@ -1,6 +1,8 @@
 
 .background-contact {
-	background-color: black;
+  background-color: black;
+  position: relative;
+	z-index: 1.5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -7,17 +7,23 @@
   background-size: cover;
   width: 100%;
   height: auto;
-  padding-top: 30px;
+	padding-top: 10px;
+	margin-top: -100px;
 }
 
 .hr-blog {
 	color: black;
+	margin-top: 100px;
   size: 3px solid;
-  width: 250px;
+  width: 380px;
   top:45%;
   left:50%;
-  width:0%;
   animation: line 0.5s linear forwards;
+}
+
+.title-box {
+	width: 100%;
+	margin: 80px auto;
 }
 
 .br-blog {
