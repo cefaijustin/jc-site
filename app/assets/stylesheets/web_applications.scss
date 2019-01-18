@@ -25,8 +25,9 @@
 }
 
 .sidenav {
+  background-image: linear-gradient(to right, #dbdcdd, #f2f3f4);
   height: 100%;
-  width: 120px;
+  width: 130px;
   position: fixed;
   z-index: 0;
   top: 0;
@@ -40,11 +41,12 @@
   font-style: italic;
   position: absolute;
   background: #f95325;
+  border-color: 1px solid black;
   width: 80px;
   height: 80px;
   margin: 10px 10px;
   top: 40%;
-  left: 15px;
+  left: 13px;
   text-align: center;
   color: #FFF;
   font-size: 10px;
@@ -583,6 +585,10 @@ figure.effect-slideright:hover h2 {
 
   .circle {
     display: none;
+  }
+
+  .sidenav {
+    background-color: white;
   }
 
   .h3-web {
