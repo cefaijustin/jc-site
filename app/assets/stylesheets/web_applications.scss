@@ -90,17 +90,6 @@
 	clear: both;
 }
 
-.hr-web {
-  color: white;
-  size: 3px solid;
-  width: 250px;
-  top:45%;
-  left:50%;
-  width:0%;
-  animation: line 0.5s linear forwards;
-  margin-bottom: 40px;
-}
-
 .h1-web {
   color: black;
   font-size: 50px;
@@ -588,7 +577,8 @@ figure.effect-slideright:hover h2 {
   }
 
   .sidenav {
-    background-color: white;
+    background-color: none;
+    background-image: none;
   }
 
   .h3-web {
