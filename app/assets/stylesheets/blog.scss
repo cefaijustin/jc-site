@@ -33,7 +33,7 @@
 .h4-subtitle {
 	font-weight: lighter;
 	font-size: 18px;
-	margin-top: -5px;
+	margin-top: 5px;
 	margin-bottom: 0px;
 }
 
@@ -120,6 +120,13 @@ p {
   width: 100%;
   height: auto !important;
   padding-top: 30px;
+	}
+
+	.h4-subtitle {
+		font-weight: lighter;
+		font-size: 18px;
+		margin-top: -5px;
+		margin-bottom: 0px;
 	}
 
 	.hr-blog {
