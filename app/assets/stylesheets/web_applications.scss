@@ -61,7 +61,7 @@
 }
 .circle:hover {
   cursor: default;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .circle:active {
@@ -73,6 +73,7 @@
   width: 55px;
   margin: 15px;
   text-align: center;
+  z-index: 1;
 }
 
 .app-container {
@@ -468,9 +469,9 @@ figure.effect-slidedown:hover figcaption > span {
   transform: translate3d(0, 0, 0);
 }
 
-/*--------------------*/
-/***** Slide Left *****/
-/*--------------------*/
+// /*--------------------*/
+// /***** Slide Left *****/
+// /*--------------------*/
 
 figure.effect-slideleft figcaption {
   width: 100%;
