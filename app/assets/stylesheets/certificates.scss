@@ -21,6 +21,11 @@
   z-index: 1;
 }
 
+.cert-subtitle {
+  font-style: lighter;
+  font-size: 14px;
+}
+
 .grid-sub {
   border: 1.5px solid black;
   border-radius: 1%;
@@ -63,7 +68,7 @@
   bottom: 0px;
   width: 100%;
   margin-top: 100px;
-  z-index: 1000;
+  z-index: 1.5;
 }
 
 @media (min-width: 250px) and (max-width: 900px) {
