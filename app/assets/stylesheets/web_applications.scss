@@ -1,6 +1,5 @@
-
 .background-web {
-	background-color: white;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,7 +10,7 @@
 
 .box {
   display: inline-block;
-	width: 40%;
+  width: 40%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -19,13 +18,13 @@
   z-index: 1009;
   /* Prevent Padding Extending Width FIX */
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-     -moz-box-sizing: border-box; /* Firefox, other Gecko */
-       -o-box-sizing: border-box; /* Opera */
-          box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  -o-box-sizing: border-box; /* Opera */
+  box-sizing: border-box;
 }
 
 .sidenav {
-  background-image: linear-gradient(to right, #dbdcdd, #f2f3f4);
+  //background-image: linear-gradient(to right, #dbdcdd, #f2f3f4);
   height: 100%;
   width: 130px;
   position: fixed;
@@ -39,20 +38,21 @@
 .circle {
   font-weight: bold;
   font-style: italic;
+  border-radius: 100%;
   position: absolute;
-  background: #f95325;
+  background: #15ad9e;
   border-color: 1px solid black;
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   margin: 10px 10px;
   top: 40%;
   left: 13px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-size: 10px;
   line-height: 16px;
   cursor: pointer;
-  transition: ease-in-out 0.1s; 
+  transition: ease-in-out 0.1s;
 }
 
 .circle a {
@@ -70,9 +70,9 @@
 }
 
 .circle-text {
-  font-size: 14px;
+  width: 55px;
+  margin: 15px;
   text-align: center;
-  margin-top: 32px;
 }
 
 .app-container {
@@ -87,7 +87,7 @@
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .h1-web {
@@ -96,7 +96,6 @@
   font-weight: normal;
   margin-bottom: 0;
 }
-
 
 .h2-web {
   color: black;
@@ -118,7 +117,6 @@
   transition: all ease-in-out 200ms;
 }
 
-
 .h4-web {
   color: black;
   font-weight: lighter;
@@ -132,14 +130,11 @@
   font-weight: lighter;
 }
 
-
 /*
 
 ============ HOVER BOX ====================
 
 */
-
-
 
 a.button {
   color: #b6872d;
@@ -216,11 +211,9 @@ a.button:hover {
   transition: opacity 0.5s, -transform 1s;
 }
 
-
 .grid figure img:hover {
   opacity: 0.3;
 }
-
 
 .grid figure figcaption {
   padding-top: 10px;
@@ -237,9 +230,8 @@ a.button:hover {
   transition: transform 0.35s;
 }
 
-
 .grid figure figcaption::after {
-  content: '';
+  content: "";
   border-style: solid;
   border-width: 20px;
   position: absolute;
@@ -260,8 +252,6 @@ a.button:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .grid figure a.anchor {
@@ -276,7 +266,7 @@ a.button:hover {
   padding-top: 20px;
   display: block;
   z-index: 1.5;
-  word-spacing: -0.15em;  
+  word-spacing: -0.15em;
   font-weight: 300;
   text-align: center;
   margin: 0 auto;
@@ -284,7 +274,6 @@ a.button:hover {
   width: 100%;
   top: 20%;
 }
-
 
 .grid figure.double-height h2 {
   top: 40%;
@@ -316,12 +305,11 @@ a.button:hover {
   padding-left: 5%;
 }
 
-
 .grid figure.double-height p {
   top: 60%;
 }
 .grid figure:hover p {
-  opacity: 1; 
+  opacity: 1;
 }
 .grid figure h2,
 .grid figure figcaption > span {
@@ -331,20 +319,20 @@ a.button:hover {
   transition-delay: 0.15s;
 }
 .grid figure:hover figcaption > span:nth-child(4) {
-  transition-delay: 0.20s;
+  transition-delay: 0.2s;
 }
 .grid figure:hover figcaption > span:nth-child(3) {
   transition-delay: 0.25s;
 }
 .grid figure:hover figcaption > span:nth-child(2) {
-  transition-delay: 0.30s;
+  transition-delay: 0.3s;
 }
 
 .grid-r figure.double-height p {
   top: 60%;
 }
 .grid-r figure:hover p {
-  opacity: 1; 
+  opacity: 1;
 }
 .grid-r figure h2,
 .grid-r figure figcaption > span {
@@ -354,13 +342,13 @@ a.button:hover {
   transition-delay: 0.15s;
 }
 .grid-r figure:hover figcaption > span:nth-child(4) {
-  transition-delay: 0.20s;
+  transition-delay: 0.2s;
 }
 .grid figure:hover figcaption > span:nth-child(3) {
   transition-delay: 0.25s;
 }
 .grid figure:hover figcaption > span:nth-child(2) {
-  transition-delay: 0.30s;
+  transition-delay: 0.3s;
 }
 
 /* Individual Colors */
@@ -375,41 +363,40 @@ a.button:hover {
 .grid figure figcaption.gray h2 {
   color: #fff;
 }
-  figure.effect-slideup figcaption.blue::after {
-    border-bottom-color: #50758b;
-  }
-  figure.effect-slidedown figcaption.blue::after {
-    border-top-color: #50758b;
-  }
-  figure.effect-slideleft figcaption.blue::after {
-    border-left-color: #50758b;
-  }
-  figure.effect-slideright figcaption.blue::after {
-    border-right-color: #50758b;
-  }
+figure.effect-slideup figcaption.blue::after {
+  border-bottom-color: #50758b;
+}
+figure.effect-slidedown figcaption.blue::after {
+  border-top-color: #50758b;
+}
+figure.effect-slideleft figcaption.blue::after {
+  border-left-color: #50758b;
+}
+figure.effect-slideright figcaption.blue::after {
+  border-right-color: #50758b;
+}
 
 /* GRAY */
 .grid figure figcaption.gray {
   background-color: #a3aaad;
 }
-  figure.effect-slideup figcaption.gray::after {
-    border-bottom-color: #a3aaad;
-  }
-  figure.effect-slidedown figcaption.gray::after {
-    border-top-color: #a3aaad;
-  }
-  figure.effect-slideleft figcaption.gray::after {
-    border-left-color: #a3aaad;
-  }
-  figure.effect-slideright figcaption.gray::after {
-    border-right-color: #a3aaad;
-  }
-  
+figure.effect-slideup figcaption.gray::after {
+  border-bottom-color: #a3aaad;
+}
+figure.effect-slidedown figcaption.gray::after {
+  border-top-color: #a3aaad;
+}
+figure.effect-slideleft figcaption.gray::after {
+  border-left-color: #a3aaad;
+}
+figure.effect-slideright figcaption.gray::after {
+  border-right-color: #a3aaad;
+}
+
 /* GOLD */
 .grid figure figcaption.gold {
   background-color: #b6872d;
 }
-
 
 /* Individual effects */
 
@@ -420,7 +407,7 @@ a.button:hover {
 figure.effect-slideup figcaption {
   top: auto;
   bottom: 0;
-  transform: translate3d(0,200%,0);
+  transform: translate3d(0, 200%, 0);
 }
 figure.effect-slideup.double-height figcaption {
   height: 50%;
@@ -438,12 +425,12 @@ figure.effect-slideup figcaption > span {
 }
 figure.effect-slideup h2,
 figure.effect-slideup figcaption > span {
-  transform: translate3d(0,200%,0);
+  transform: translate3d(0, 200%, 0);
 }
 figure.effect-slideup:hover figcaption,
 figure.effect-slideup:hover h2,
 figure.effect-slideup:hover figcaption > span {
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 /*--------------------*/
@@ -455,7 +442,7 @@ figure.effect-slidedown figcaption {
   height: 100%;
   bottom: auto;
   top: 0;
-  transform: translate3d(0,-200%,0);  
+  transform: translate3d(0, -200%, 0);
 }
 figure.effect-slidedown.double-height figcaption {
   height: 100% !important;
@@ -473,12 +460,12 @@ figure.effect-slidedown figcaption > span {
 }
 figure.effect-slidedown h2,
 figure.effect-slidedown figcaption > span {
-  transform: translate3d(0,-200%,0);
+  transform: translate3d(0, -200%, 0);
 }
 figure.effect-slidedown:hover figcaption,
 figure.effect-slidedown:hover h2,
 figure.effect-slidedown:hover figcaption > span {
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 /*--------------------*/
@@ -487,7 +474,7 @@ figure.effect-slidedown:hover figcaption > span {
 
 figure.effect-slideleft figcaption {
   width: 100%;
-  transform: translate3d(-200%,0,0);  
+  transform: translate3d(-200%, 0, 0);
 }
 figure.effect-slideleft figcaption::after {
   border-top-color: transparent;
@@ -502,12 +489,12 @@ figure.effect-slideleft figcaption > span {
 }
 figure.effect-slideleft h2,
 figure.effect-slideleft figcaption > span {
-  transform: translate3d(-200%,0,0);
+  transform: translate3d(-200%, 0, 0);
 }
 figure.effect-slideleft:hover figcaption,
 figure.effect-slideleft:hover h2,
 figure.effect-slideleft:hover figcaption > span {
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 /*--------------------*/
@@ -516,7 +503,7 @@ figure.effect-slideleft:hover figcaption > span {
 
 figure.effect-slideright figcaption {
   width: 7%;
-  transform: translate3d(1810%,0,0);
+  transform: translate3d(1810%, 0, 0);
 }
 figure.effect-slideright figcaption::after {
   border-top-color: transparent;
@@ -531,20 +518,18 @@ figure.effect-slideright figcaption > span {
 }
 figure.effect-slideright h2,
 figure.effect-slideright figcaption > span {
-  transform: translate3d(400%,0,0);
+  transform: translate3d(400%, 0, 0);
 }
 figure.effect-slideright:hover figcaption,
 figure.effect-slideright:hover figcaption > span {
-  transform: translate3d(200%,0,0);
+  transform: translate3d(200%, 0, 0);
 }
 figure.effect-slideright:hover h2 {
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
-
 
 /* MEDIA SCREEN SIZES */
 @media (min-width: 250px) and (max-width: 1200px) {
-
   .background-web {
     width: 100%;
     height: auto !important;
@@ -560,7 +545,6 @@ figure.effect-slideright:hover h2 {
   }
 }
 @media (min-width: 250px) and (max-width: 900px) {
-  
   .grid figure {
     width: 100%;
     height: auto;
@@ -603,63 +587,60 @@ figure.effect-slideright:hover h2 {
   }
 }
 
-
-.skillst9{
-	width:100%;
-  color:#34495e;
- 
+.skillst9 {
+  width: 100%;
+  color: #34495e;
 }
 
 .container {
   width: 100%;
 }
 
-.skillst9 .skillbar{
-	width: 60%;
-	height: 18px;
-	padding:5px;
-	box-sizing:border-box;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 3px;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
+.skillst9 .skillbar {
+  width: 60%;
+  height: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   margin-left: auto;
   margin-right: auto;
-	margin-bottom:35px;
-	position:relative;
-	background-color: #363636;
+  margin-bottom: 35px;
+  position: relative;
+  background-color: #363636;
 }
-.skillst9 .skillbar .count-bar{
-	width: 100%;
-	height: 8px;
-	width:0px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 2px;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
-	background-color: #15ad9e;
+.skillst9 .skillbar .count-bar {
+  width: 100%;
+  height: 8px;
+  width: 0px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #15ad9e;
 }
-.skillst9 .title{
-	position:absolute;
-	font-size:14px;
-	font-weight:400;
-	padding-left:5px;
-	line-height:25px;
-	top:-25px;
-	left:0;
-	text-transform:uppercase;
+.skillst9 .title {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 5px;
+  line-height: 25px;
+  top: -25px;
+  left: 0;
+  text-transform: uppercase;
 }
-.skillst9 .count{
-	position:absolute;
-	top:0;
-	right:12px;
-	line-height:16px;
-	font-weight:400;
-	color: #fdfdfd;
-	font-size: 9px;
+.skillst9 .count {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fdfdfd;
+  font-size: 9px;
 }
-

@@ -17,6 +17,8 @@ gem 'jquery-rails'
 
 gem 'bootstrap', '~> 4.0'
 
+gem 'railties', '~> 5.0', '>= 5.0.0.1'
+
 gem 'mini_racer', '~> 0.1.14'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

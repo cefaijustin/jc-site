@@ -1,0 +1,68 @@
+.background-certs {
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.cert-container {
+  display: inline-block;
+  overflow: hidden;
+  float: none;
+  margin: 5px;
+  width: 35%;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+  z-index: 1;
+}
+
+.grid-sub {
+  border: 1.5px solid black;
+  border-radius: 1%;
+  display: inline-block;
+  overflow: hidden;
+  float: none;
+  margin: 5px;
+  width: 35%;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+  z-index: 1;
+}
+
+.box1 {
+  display: inline-block;
+  width: 95%;
+  margin: 50px 10px 20px 10px;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  /* Prevent Padding Extending Width FIX */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  -o-box-sizing: border-box; /* Opera */
+  box-sizing: border-box;
+}
+
+@media (min-width: 250px) and (max-width: 900px) {
+  .grid-sub figure {
+    width: auto;
+    float: left;
+  }
+
+  .box1 {
+    width: 80%;
+    margin: 30px 10px;
+  }
+
+  .cert-container {
+    width: 80%;
+  }
+}
