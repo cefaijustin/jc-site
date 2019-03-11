@@ -98,10 +98,7 @@
 }
 
 .about-top h1 {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 auto;
   font-weight: bold;
   color: black;
   font-size: 130px;
@@ -112,17 +109,14 @@
 
 .about-h3 {
   text-align: center;
-  font-size: 40px !important;
+  font-size: 35px !important;
   font-weight: bolder;
   margin-top: 100px;
-  padding-bottom: 40px;
+  margin-bottom: -20px;
 }
 
 .about-top h3 {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin: -20 auto;
   margin-top: 20px;
   font-weight: bold;
   color: black;
