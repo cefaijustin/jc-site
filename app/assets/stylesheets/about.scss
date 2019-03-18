@@ -411,6 +411,10 @@ WITH DESCTRIPTION ADJACENT
   .nav-container li {
     display: none;
   }
+
+  .about-top {
+    margin-top: 10%;
+  }
 }
 
 @media (min-width: 250px) and (max-width: 600px) {
