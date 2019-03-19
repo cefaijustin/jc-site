@@ -4,6 +4,7 @@
   "dependencies": {
     "bourbon": "^5.1.0",
     "custombox": "^4.0.3",
+    "normalize.css": "^8.0.1",
     "typed.js": "^2.0.9"
   }
 }
