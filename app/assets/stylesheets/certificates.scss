@@ -76,6 +76,53 @@
   box-shadow: 1px 1px 3px #363636;
 }
 
+/** LIGHTBOX MARKUP **/
+
+.cert-lightbox {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0, 0);
+  transition: transform ease-in-out 100ms;
+}
+
+.cert-lightbox:target {
+  transform: scale(1, 1);
+  display: flex;
+  z-index: 900;
+}
+
+.cert-lightbox__content {
+  width: 65%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: red;
+  top: -1em;
+  right: -1em;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close::after {
+  content: "X";
+  color: white;
+  font-weight: 700;
+}
+
 @media (min-width: 250px) and (max-width: 900px) {
   .grid-sub figure {
     width: auto;

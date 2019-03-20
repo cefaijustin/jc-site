@@ -3,18 +3,23 @@
     <h3 class="h3-web">{ certificates }</h3>
     <h4 class="h4-web">I enjoy learning</h4>
   </div>    
+  
   <div class="cert-container">
-    <div class="box1 grid-sub">
-        <%= image_tag "firehose.jpg", class: "full-width-cert" %>
-    </div>
+    <a href="#cert-item-1" class="button-new">
+      <div class="box1 grid-sub">
+          <%= image_tag "firehose.jpg", class: "full-width-cert" %>
+      </div>
+      </a>
     <h4 class="h4-subtitle">software engineering bootcamp</h4>
     <p class="cert-subtitle">Dec. 2017 - Oct. 2018</p> 
   </div>
 
   <div class="cert-container">
-    <div class="box1 grid-sub">
-      <%= image_tag "udemy-js.jpg", class: "full-width-cert" %>
-    </div>
+    <a href="#cert-item-2" class="button-new">
+      <div class="box1 grid-sub">
+        <%= image_tag "udemy-js.jpg", class: "full-width-cert" %>
+      </div>
+    </a>  
     <h4 class="h4-subtitle">JavaScript: the weird parts</h4>
     <p class="cert-subtitle">Nov. 2018</p> 
   </div>
@@ -22,19 +27,58 @@
     <br class="clear" />
 
     <div class="cert-container">
-      <div class="box1 grid-sub">
-        <%= image_tag "udemy-algos.jpg", class: "full-width-cert" %>
-      </div>
+      <a href="#cert-item-3" class="button-new">
+        <div class="box1 grid-sub">
+          <%= image_tag "udemy-algos.jpg", class: "full-width-cert" %>
+        </div>
+      </a> 
       <h4 class="h4-subtitle">algorithms + data structures</h4>
       <p class="cert-subtitle">Dec. 2018</p> 
     </div>
 
     <div class="cert-container">
-      <div class="box1 grid-sub">
-        <%= image_tag "udemy-shopify.jpg", class: "full-width-cert" %>
-      </div>
+      <a href="#cert-item-4" class="button-new">
+        <div class="box1 grid-sub">
+          <%= image_tag "udemy-shopify.jpg", class: "full-width-cert" %>
+        </div>
+      </a>
       <h4 class="h4-subtitle">shopify themes from scratch</h4>
       <p class="cert-subtitle">Feb. 2019</p> 
     </div>
+
+
+    <div class="certificate-lightboxes">
+
+      <div class="cert-lightbox" id="cert-item-1">
+        <div class="cert-lightbox__content">
+          <a href="#certificates" class="close"></a>
+          <%= image_tag "firehose.jpg", class: "full-width-cert" %>
+        </div>
+      </div>
+
+      <div class="cert-lightbox" id="cert-item-2">
+        <div class="cert-lightbox__content">
+          <a href="#certificates" class="close"></a>
+          <%= image_tag "udemy-js.jpg", class: "full-width-cert" %>
+        </div>
+      </div>
+
+      <div class="cert-lightbox" id="cert-item-3">
+        <div class="cert-lightbox__content">
+        <a href="#certificates" class="close"></a>
+          <%= image_tag "udemy-algos.jpg", class: "full-width-cert" %>
+        </div>
+      </div>
+
+      <div class="cert-lightbox" id="cert-item-4">
+        <div class="cert-lightbox__content">
+          <a href="#certificates" class="close"></a>
+          <%= image_tag "udemy-shopify.jpg", class: "full-width-cert" %>
+        </div>
+      </div>
+
+    </div>
+
+
     <div class="bottom-line"></div>
   </div>  
