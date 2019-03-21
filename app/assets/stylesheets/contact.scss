@@ -8,7 +8,7 @@
   background-size: cover;
   align-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .contact-logo {
@@ -311,7 +311,7 @@ p img {
 @media (min-width: 250px) and (max-width: 900px) {
   .background-contact {
     width: 100%;
-    height: 118% !important;
+    height: 100vh !important;
   }
 
   .full-width-contact {
