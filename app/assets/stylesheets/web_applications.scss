@@ -66,9 +66,40 @@
   }
 }
 
-.inversed {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
+.inversed .background-web {
+  background-color: black;
+}
+
+.inversed .background-blog {
+  background-color: black;
+}
+
+.inversed .background-certs {
+  background-color: black;
+}
+
+.inversed .background-skills {
+  background-color: black;
+}
+
+.inversed p {
+  color: white;
+}
+
+.inversed h3 {
+  color: white;
+}
+
+.inversed h4 {
+  color: white;
+}
+
+.inversed p {
+  color: white;
+}
+
+.inversed .typed-strings {
+  color: white;
 }
 
 .circle {
@@ -119,8 +150,8 @@
   border: none;
   text-align: center;
   top: 0px;
-  right: 25px;
-  color: black;
+  right: 32px;
+  color: #15ad9e;
   font-size: 18px;
   cursor: pointer;
   background: none;
@@ -615,6 +646,10 @@ figure.effect-slideright:hover h2 {
 
   .grid figure figcaption {
     font-size: 90%;
+  }
+
+  .invert {
+    display: none;
   }
 }
 @media (min-width: 250px) and (max-width: 900px) {
