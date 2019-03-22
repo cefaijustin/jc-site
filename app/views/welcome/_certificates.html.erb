@@ -5,9 +5,8 @@
   </div>    
   
   <div class="cert-container">
-    <a href="#cert-item-1" data-no-smooth-scroll class="button-new">
       <div class="box1 grid-sub">
-          <%= image_tag "firehose.jpg", class: "full-width-cert" %>
+          <%= link_to image_tag "firehose.jpg", class: "full-width-cert", data: { lightbox: 'firehose.jpg'}%>
       </div>
       </a>
     <h4 class="h4-subtitle">software engineering bootcamp</h4>
@@ -47,37 +46,37 @@
     </div>
 
 
-    <div class="certificate-lightboxes">
+    # <div class="certificate-lightboxes">
 
-      <div class="cert-lightbox" id="cert-item-1">
-        <div class="cert-lightbox__content">
-          <a href="#certificates" class="close"></a>
-          <%= image_tag "firehose.jpg", class: "full-width-cert" %>
-        </div>
-      </div>
+    #   <div class="cert-lightbox" id="cert-item-1">
+    #     <div class="cert-lightbox__content">
+    #       <a href="#certificates" class="close"></a>
+    #       <%= image_tag "firehose.jpg", class: "full-width-cert" %>
+    #     </div>
+    #   </div>
 
-      <div class="cert-lightbox" id="cert-item-2">
-        <div class="cert-lightbox__content">
-          <a href="#certificates" class="close"></a>
-          <%= image_tag "udemy-js.jpg", class: "full-width-cert" %>
-        </div>
-      </div>
+    #   <div class="cert-lightbox" id="cert-item-2">
+    #     <div class="cert-lightbox__content">
+    #       <a href="#certificates" class="close"></a>
+    #       <%= image_tag "udemy-js.jpg", class: "full-width-cert" %>
+    #     </div>
+    #   </div>
 
-      <div class="cert-lightbox" id="cert-item-3">
-        <div class="cert-lightbox__content">
-        <a href="#certificates" class="close"></a>
-          <%= image_tag "udemy-algos.jpg", class: "full-width-cert" %>
-        </div>
-      </div>
+    #   <div class="cert-lightbox" id="cert-item-3">
+    #     <div class="cert-lightbox__content">
+    #     <a href="#certificates" class="close"></a>
+    #       <%= image_tag "udemy-algos.jpg", class: "full-width-cert" %>
+    #     </div>
+    #   </div>
 
-      <div class="cert-lightbox" id="cert-item-4">
-        <div class="cert-lightbox__content">
-          <a href="#certificates" class="close"></a>
-          <%= image_tag "udemy-shopify.jpg", class: "full-width-cert" %>
-        </div>
-      </div>
+    #   <div class="cert-lightbox" id="cert-item-4">
+    #     <div class="cert-lightbox__content">
+    #       <a href="#certificates" class="close"></a>
+    #       <%= image_tag "udemy-shopify.jpg", class: "full-width-cert" %>
+    #     </div>
+    #   </div>
 
-    </div>
+    # </div>
 
 
     <div class="bottom-line"></div>
