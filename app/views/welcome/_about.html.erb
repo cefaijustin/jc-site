@@ -1,5 +1,4 @@
 <div class="about-container" id="about-one">
-
 	<div class="nav-container">
 		<a class="nav-link"><%= image_tag "jclogo.png", class: "jclogo"%></a>
 
@@ -12,8 +11,6 @@
 				</ul>	
 			</nav>	
 	</div>		
-
-	
 
 	<br class="clear" />
 	<div class="about-top">
@@ -57,10 +54,7 @@
 		stringsElement: '#typed-strings',
 		startDelay: 1000,
 		typeSpeed: 30,
-		backSpeed: 20,
-		onComplete: function(self) {  
-  		$('a[href="#web-apps"]').click(scrollToHash) 
-		}
+		backSpeed: 20
 	});																							 
 	document.querySelectorAll(".typed-cursor")[0].style.display = "none";
 

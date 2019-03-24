@@ -128,13 +128,14 @@ MODAL BELOW
 .modal-state:checked + .modal {
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 .modal-state:checked + .modal .modal__inner {
   top: 0;
 }
 
-.modal__inner {
+.modal__inner-contact {
   transition: top 0.25s ease;
   position: absolute;
   top: -20%;

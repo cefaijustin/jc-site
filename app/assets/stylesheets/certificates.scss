@@ -57,6 +57,7 @@
 
 .full-width-cert {
   width: 100%;
+  vertical-align: top;
 }
 
 .h4-subtitle {
@@ -121,6 +122,32 @@
   content: "X";
   color: white;
   font-weight: 700;
+}
+
+.btn-cert {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  cursor: pointer;
+  background: black;
+  display: inline-block;
+  padding: none;
+  color: #fff;
+  border-radius: 2px;
+  transition: all ease-in-out 100ms;
+}
+
+.modal__inner-cert {
+  transition: top 0.25s ease;
+  position: absolute;
+  top: 0vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 85vh;
+  height: 67%;
+  margin: auto;
+  overflow: auto;
 }
 
 @media (min-width: 250px) and (max-width: 900px) {
