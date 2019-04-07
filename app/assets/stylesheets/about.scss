@@ -19,7 +19,7 @@
   padding: 15px;
   margin-top: 90px;
   margin-bottom: 0px;
-  margin-left: auto;
+  margin-left: -14px;
   margin-right: auto;
   align-self: center;
   -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -29,6 +29,47 @@
   animation: fadein 2.5s;
 }
 
+.about-left {
+  position: absolute;
+  top: 22%;
+  right: 75%;
+  font-size: 300px;
+  color: #15ad93;
+  text-shadow: 0px 1px 3px black;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.about-right {
+  position: absolute;
+  top: 22%;
+  left: 75%;
+  font-size: 300px;
+  color: #15ad93;
+  text-shadow: 0px 1px 3px black;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .down-arrow {
   opacity: 0;
   width: 25px;
@@ -402,6 +443,20 @@ WITH DESCTRIPTION ADJACENT
   padding-right: 20px;
 }
 
+@media (min-width: 1200px) and (max-width: 3000px) {
+  .about-left {
+    font-size: 330px;
+    top: 18%;
+    transition: all 0.3s;
+  }
+
+  .about-right {
+    font-size: 330px;
+    top: 18%;
+    transition: all 0.3s;
+  }
+}
+
 @media (min-width: 250px) and (max-width: 900px) {
   .nav-container li {
     display: none;
@@ -409,6 +464,17 @@ WITH DESCTRIPTION ADJACENT
 
   .about-top {
     margin-top: 10%;
+    transition: all 0.3s;
+  }
+
+  .about-left {
+    display: none;
+    visibility: hidden;
+  }
+
+  .about-right {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -416,6 +482,7 @@ WITH DESCTRIPTION ADJACENT
   .about-top h3 {
     margin-top: 15%;
     font-size: 35px;
+    transition: all 0.3s;
   }
 
   .social-links1 li {
@@ -461,6 +528,7 @@ WITH DESCTRIPTION ADJACENT
 
   .about-top h1 {
     font-size: 90px;
+    transition: all 0.3s;
   }
 
   .type-active h3 {
