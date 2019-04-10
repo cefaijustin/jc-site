@@ -30,7 +30,7 @@
 	 </div> 
 	 <span id="typed"></span>	
 	</div>
-	<div id="down-arrow">
+	<div id="down-arrow" class="slideDown">
 		<a href="#web-apps"><%= image_tag "down-arrow.png", class: "down-arrow"%>
 	</div>
 
@@ -61,5 +61,42 @@
 		backSpeed: 20
 	});																							 
 	document.querySelectorAll(".typed-cursor")[0].style.display = "none";
+
+	
+	$(document).ready(function () {
+    var $horizontal = $('.about-left');
+
+    $(window).scroll(function () {
+        var s = $(this).scrollTop(),
+            d = $(document).height(),
+            c = $(this).height();
+
+        scrollPercent = (s / (d - c) * 6);
+
+        var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+
+        $horizontal.css({
+					'right': 'calc(82% - 150px + ' + position + 'px)'
+			});
+    });
+});
+
+$(document).ready(function () {
+    var $horizontalR = $('.about-right');
+
+    $(window).scroll(function () {
+        var s = $(this).scrollTop(),
+            d = $(document).height(),
+            c = $(this).height();
+
+        scrollPercent = (s / (d - c) * 6);
+
+        var position = (scrollPercent * ($(document).width() - $horizontalR.width()));
+
+        $horizontalR.css({
+					'left': 'calc(82% - 150px + ' + position + 'px)'
+			});
+    });
+});
 
 </script>

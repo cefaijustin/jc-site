@@ -32,24 +32,25 @@
 .about-left {
   position: absolute;
   top: 22%;
-  right: 75%;
+  right: calc(82% - 150px);
   font-size: 300px;
   color: #15ad93;
   text-shadow: 0px 1px 3px black;
-  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  touch-action: none;
 }
 
 .about-right {
   position: absolute;
   top: 22%;
-  left: 75%;
+  left: calc(82% - 150px);
   font-size: 300px;
   color: #15ad93;
   text-shadow: 0px 1px 3px black;
-  animation: 1s ease-out 0s 1 slideInFromBottom;
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
-@keyframes slideInFromTop {
+@keyframes slideInFromLeft {
   0% {
     transform: translateX(-200%);
     opacity: 0;
@@ -60,7 +61,7 @@
   }
 }
 
-@keyframes slideInFromBottom {
+@keyframes slideInFromRight {
   0% {
     transform: translateX(200%);
     opacity: 0;
@@ -70,6 +71,7 @@
     opacity: 1;
   }
 }
+
 .down-arrow {
   opacity: 0;
   width: 25px;
@@ -441,20 +443,6 @@ WITH DESCTRIPTION ADJACENT
   color: white;
   margin-top: -1px;
   padding-right: 20px;
-}
-
-@media (min-width: 1200px) and (max-width: 3000px) {
-  .about-left {
-    font-size: 330px;
-    top: 18%;
-    transition: all 0.3s;
-  }
-
-  .about-right {
-    font-size: 330px;
-    top: 18%;
-    transition: all 0.3s;
-  }
 }
 
 @media (min-width: 250px) and (max-width: 900px) {
