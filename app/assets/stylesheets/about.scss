@@ -9,7 +9,6 @@
   padding: 0px;
   width: 100%;
   height: 100vh;
-  clip-path: inset(0% 0%, 100% 0%, 100% 30%, 0% 0%);
 }
 
 html,
@@ -81,7 +80,6 @@ body {
   opacity: 0;
   width: 25px;
   height: 25px;
-  padding-top: 10px;
   transition: all ease-in-out 400ms;
   -moz-animation: fadein 100ms ease-in forwards; /* Firefox */
   -webkit-animation: fadein 100ms ease-in forwards; /* Safari and Chrome */
