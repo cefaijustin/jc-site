@@ -103,6 +103,8 @@
 }
 
 .circle {
+  opacity: 0;
+  transform: scale(0);
   font-weight: bold;
   font-style: italic;
   border-radius: 100%;
@@ -119,7 +121,7 @@
   font-size: 10px;
   line-height: 16px;
   cursor: pointer;
-  transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.8s;
   box-shadow: 2px 1px 4px #363636;
   animation: pulse 4s infinite;
 }
@@ -130,11 +132,11 @@
 }
 .circle:hover {
   cursor: default;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .circle:active {
-  transform: scale(0.95);
+  transform: scale(0.98);
   transition: ease-in-out 50ms;
 }
 
@@ -152,7 +154,7 @@
   }
   50% {
     background-color: #ffffff;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
 
   100% {
@@ -319,6 +321,8 @@ a.button:hover {
   list-style: none;
   text-align: center;
   z-index: unset;
+  opacity: 0;
+  transition: all 0.8s;
 }
 
 .grid .double-height {
@@ -741,6 +745,8 @@ figure.effect-slideright:hover h2 {
 
 .container {
   width: 100%;
+  opacity: 0;
+  transition: all 0.8s;
 }
 
 .skillst9 .skillbar {

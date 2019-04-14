@@ -153,7 +153,31 @@
         $this.text('go light').css({"all": "unset", "cursor": "pointer", "color": "#15ad9e", "font-size": "18px", "top": "25px", "right": "25px" });
       }
     });
-    
+
+    $(window).scroll (function () {
+    var sT = $(this).scrollTop();
+      if (sT >= 800 ) {
+        $('.circle').css({"opacity": "1"});
+      } else {
+        $('.circle').css({"opacity": "0"});
+      }
+  })
+
+  $(window).scroll (function () {
+    var sT = $(this).scrollTop();
+      if (sT >= 750 ) {
+        $('.container').css({"opacity": "1"});
+      }
+  })
+
+  $(window).scroll (function () {
+    var sT = $(this).scrollTop();
+      if (sT >= 1600 ) {
+        $('.outer-box').css({"opacity": "1"});
+      }
+  })
+
+  
   </script>  
 
 
