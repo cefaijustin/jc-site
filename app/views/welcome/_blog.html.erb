@@ -81,10 +81,17 @@
 
 $(window).scroll (function () {
     var sT = $(this).scrollTop();
-      if (sT >= 2800 ) {
-        $('.blog-box').css({"opacity": "1"});
+    var sB = sT + $(window).height()
+    var tag = $(".blog-box")
+
+      if ($(tag).position().top < sB ) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
       }
-  })</script>
+  })
+  
+  </script>
 
 
 

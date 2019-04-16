@@ -322,7 +322,13 @@ a.button:hover {
   text-align: center;
   z-index: unset;
   opacity: 0;
+  transform: translate(0, 220px);
   transition: all 0.8s;
+}
+
+.outer-box.visible {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .grid .double-height {
@@ -746,7 +752,13 @@ figure.effect-slideright:hover h2 {
 .container {
   width: 100%;
   opacity: 0;
+  transform: translate(0, 220px);
   transition: all 0.8s;
+}
+
+.container.visible {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .skillst9 .skillbar {

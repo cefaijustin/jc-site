@@ -165,15 +165,25 @@
 
   $(window).scroll (function () {
     var sT = $(this).scrollTop();
-      if (sT >= 750 ) {
-        $('.container').css({"opacity": "1"});
+    var sB = sT + $(window).height()
+    var tag = $(".outer-box")
+
+      if ($(tag).position().top < sB ) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
       }
   })
 
   $(window).scroll (function () {
     var sT = $(this).scrollTop();
-      if (sT >= 1600 ) {
-        $('.outer-box').css({"opacity": "1"});
+    var sB = sT + $(window).height()
+    var tag = $(".container")
+
+      if ($(tag).position().top < sB ) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
       }
   })
 

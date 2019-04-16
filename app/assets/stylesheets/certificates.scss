@@ -20,7 +20,13 @@
   text-align: center;
   z-index: 1;
   opacity: 0;
+  transform: translate(0, 220px);
   transition: all 0.8s;
+}
+
+.cert-container.visible {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 .cert-subtitle {

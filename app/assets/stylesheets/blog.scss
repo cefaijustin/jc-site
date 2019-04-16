@@ -42,7 +42,13 @@
   height: auto;
   margin-bottom: 100px;
   opacity: 0;
+  transform: translate(0, 220px);
   transition: all 0.8s;
+}
+
+.blog-box.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .blog-caption {
