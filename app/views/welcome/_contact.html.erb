@@ -3,16 +3,13 @@
 	<div class="contact-logo">
 		<a class="nav-link"><%= image_tag "jclogow.png", class: "jclogo"%></a>
 	</div>
-	
-	<div class="say-hello">
-			
-				<div>
-			  <p>
-			    <label class="btn btn--blue" for="modal-2"><%= image_tag "sayhello.png", class: "full-width-contact" %></label>
-			  </p>
-			</div>
-			
 
+	<div class="say-hi">
+	<label class="btn btn--blue" for="modal-2">
+		<h1 class="say-hi-l">{ Say</h1>
+		<h1 class="say-hi-r">&nbsp; Hello }</h1>
+		</label>
+		
 			<input class="modal-state" id="modal-2" type="checkbox" />
 			<div class="modal">
 			  <label class="modal__bg" for="modal-2"></label>
@@ -29,3 +26,31 @@
 	</div>
 	
 </div>	
+
+<script>
+			
+			$(window).scroll (function () {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height()
+    var tag = $(".say-hi-l")
+
+      if ($(tag).position().top < sB ) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
+			}
+		})	
+			
+			$(window).scroll (function () {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height()
+    var tag = $(".say-hi-r")
+
+      if ($(tag).position().top < sB ) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
+      }
+	})
+	
+</script>

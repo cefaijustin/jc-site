@@ -156,7 +156,7 @@
 
     $(window).scroll (function () {
     var sT = $(this).scrollTop();
-      if (sT >= 800 ) {
+      if (sT >= 800 && sT <= 4500 ) {
         $('.circle').css({"opacity": "1"});
       } else {
         $('.circle').css({"opacity": "0"});
@@ -186,30 +186,5 @@
         $(tag).removeClass("visible")
       }
   })
-
   
   </script>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

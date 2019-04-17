@@ -11,6 +11,39 @@
   height: 100vh;
 }
 
+.say-hi {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.say-hi-l {
+  float: none;
+  color: #fff;
+  font-size: 120px;
+  margin-bottom: -8%;
+  transform: translate(-520px, 0);
+  transition: all 0.5s;
+}
+
+.say-hi-r {
+  float: none;
+  color: #fff;
+  font-size: 120px;
+  transform: translate(520px, 0);
+  transition: all 0.5s;
+}
+
+.say-hi-l.visible {
+  transform: translate(0, 0);
+}
+
+.say-hi-r.visible {
+  transform: translate(0, 0);
+}
+
 .say-hello {
   display: block;
   position: relative;
@@ -21,6 +54,8 @@
   margin-top: -50px;
   margin-right: 20%;
   background-color: black;
+  visibility: hidden;
+  opacity: 0;
 }
 
 // .video {
@@ -151,17 +186,17 @@ MODAL BELOW
 .modal__inner-contact {
   transition: top 0.25s ease;
   position: absolute;
-  top: -20%;
+  top: 0%;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 30%;
+  width: 40%;
+  height: 70%;
   margin: auto;
   overflow: auto;
   background: #fff;
   border-radius: 5px;
   padding: 1em 2em;
-  height: 30%;
 }
 
 .modal__close {
@@ -211,7 +246,6 @@ body {
 }
 
 .btn {
-  margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -237,14 +271,7 @@ body {
 .btn--blue {
   background: black;
   height: auto;
-  transform: scale(3);
   transition: all ease-in-out 150ms;
-}
-
-.btn--blue:hover,
-.btn--blue:focus {
-  //background-color: #1a1a1a;
-  //transform: scale(3.03);
 }
 
 .btn--blue:active {
@@ -278,7 +305,6 @@ p img {
 }
 
 .social-links li {
-  display: inline-block;
   float: left;
   padding-right: 40px;
   margin-right: 5px;
@@ -351,5 +377,21 @@ p img {
     margin-top: 0px;
     margin-left: -13%;
     background-color: black;
+  }
+
+  .say-hi-l {
+    float: none;
+    color: #fff;
+    font-size: 70px;
+    transform: translate(-520px, 0);
+    transition: all 0.5s;
+  }
+
+  .say-hi-r {
+    float: none;
+    color: #fff;
+    font-size: 70px;
+    transform: translate(520px, 0);
+    transition: all 0.5s;
   }
 }

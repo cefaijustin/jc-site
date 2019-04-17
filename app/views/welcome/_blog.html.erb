@@ -5,71 +5,78 @@
   <h4 class="h4-web">some things I've written</h4>
 </div>
 		<div class="blog-box">
-
-      <div class="box grid" style="border: 1.5px solid black;">
-      <figure class="effect-slidedown">
-        <%= image_tag "merge.png", class: "full-width-blog" %>
-        <figcaption>
-          <h2>Merge<br><span>Sort</span></h2>
-          <p>Breaking down Merge Sort with JavaScript.
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin/understanding-merge-sort-f8831e582a8a" class="button">
-      View</a>
-        </figcaption>     
-      </figure>
-    </div>
+      <div class="blog-box-right">
+       <div class="box grid" style="border: 1.5px solid black;">
+        <figure class="effect-slidedown">
+          <%= image_tag "merge.png", class: "full-width-blog" %>
+          <figcaption>
+            <h2>Merge<br><span>Sort</span></h2>
+            <p>Breaking down Merge Sort with JavaScript.
+            </p>
+            <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin/understanding-merge-sort-f8831e582a8a" class="button">
+        View</a>
+          </figcaption>     
+        </figure>
+      </div>
     <h4 class="h4-subtitle">merge sort</h4>
+    </div>
 
     <br class="br-blog" />
     <br class="clear" />
 
-			<div class="box grid" style="border: 1.5px solid black;">
-      <figure class="effect-slidedown">
-        <%= image_tag "medium-array.png", class: "full-width-blog" %>
-        <figcaption>
-          <h2>Arrays &<br><span>Strings</span></h2>
-          <p>Find the sum of an array of strings and numbers.
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin/array-of-strings-and-numbers-find-the-sum-8781404b5820" class="button">
-			View</a>
-        </figcaption>     
-      </figure>
+    <div class="blog-box-left">
+      <div class="box grid" style="border: 1.5px solid black;">
+        <figure class="effect-slidedown">
+          <%= image_tag "medium-array.png", class: "full-width-blog" %>
+          <figcaption>
+            <h2>Arrays &<br><span>Strings</span></h2>
+            <p>Find the sum of an array of strings and numbers.
+            </p>
+            <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin/array-of-strings-and-numbers-find-the-sum-8781404b5820" class="button">
+        View</a>
+          </figcaption>     
+        </figure>
+      </div>
+      <h4 class="h4-subtitle">arrays + strings</h4>
     </div>
-    <h4 class="h4-subtitle">arrays + strings</h4>
 
     <br class="br-blog" />
 		<br class="clear" />
 
-		<div class="box grid" style="border: 1.5px solid black;">
-      <figure class="effect-slidedown">
-        <%= image_tag "medium-git.png", class: "full-width-blog" %>
-        <figcaption>
-          <h2>Github<br><span>Workflow</span></h2>
-          <p>Getting started, going solo, & teamwork with Github.
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin/git-workflow-1a67e73d3b23" class="button">
-			View</a>
-        </figcaption>     
-      </figure>
+    <div class="blog-box-right-2">
+      <div class="box grid" style="border: 1.5px solid black;">
+        <figure class="effect-slidedown">
+          <%= image_tag "medium-git.png", class: "full-width-blog" %>
+          <figcaption>
+            <h2>Github<br><span>Workflow</span></h2>
+            <p>Getting started, going solo, & teamwork with Github.
+            </p>
+            <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin/git-workflow-1a67e73d3b23" class="button">
+        View</a>
+          </figcaption>     
+        </figure>
+      </div>
+      <h4 class="h4-subtitle">working with github</h4>
     </div>
-    <h4 class="h4-subtitle">working with github</h4>
 
     <br class="br-blog" />
 		<br class="clear" />
 
-    <div class="box grid" style="border: 1.5px solid black;">
-      <figure class="effect-slidedown">
-        <%= image_tag "medium-firehose.png", class: "full-width-blog" %>
-        <figcaption>
-          <h2>Firehose<br><span>Project</span></h2>
-          <p>Projects and algorithms.
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin/thanks-firehose-9cadfeb21f3b" class="button">
-      View</a>
-        </figcaption>     
-      </figure>
-    </div>
-    <h4 class="h4-subtitle">firehose project</h4>
+    <div class="blog-box-left-2">
+      <div class="box grid" style="border: 1.5px solid black;">
+        <figure class="effect-slidedown">
+          <%= image_tag "medium-firehose.png", class: "full-width-blog" %>
+          <figcaption>
+            <h2>Firehose<br><span>Project</span></h2>
+            <p>Projects and algorithms.
+            </p>
+            <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin/thanks-firehose-9cadfeb21f3b" class="button">
+        View</a>
+          </figcaption>     
+        </figure>
+      </div>
+      <h4 class="h4-subtitle">firehose project</h4>
+    </div>  
 
 </div>
 
@@ -82,7 +89,7 @@
 $(window).scroll (function () {
     var sT = $(this).scrollTop();
     var sB = sT + $(window).height()
-    var tag = $(".blog-box")
+    var tag = $(".blog-box-left")
 
       if ($(tag).position().top < sB ) {
         $(tag).addClass("visible")
@@ -91,6 +98,41 @@ $(window).scroll (function () {
       }
   })
   
+  $(window).scroll (function () {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height()
+    var tag = $(".blog-box-right")
+
+      if ($(tag).position().top < sB ) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
+      }
+  })
+
+  $(window).scroll (function () {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height()
+    var tag = $(".blog-box-left-2")
+
+      if ($(tag).position().top < sB ) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
+      }
+  })
+  
+  $(window).scroll (function () {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height()
+    var tag = $(".blog-box-right-2")
+
+      if ($(tag).position().top < sB ) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
+      }
+  })
   </script>
 
 
