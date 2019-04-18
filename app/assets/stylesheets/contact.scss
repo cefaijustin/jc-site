@@ -17,6 +17,7 @@
   left: 50%;
   top: 45%;
   transform: translate(-50%, -50%);
+  transition: all 2.5s;
 }
 
 .say-hi-l {
@@ -25,7 +26,7 @@
   font-size: 120px;
   margin-bottom: -8%;
   transform: translate(-520px, 0);
-  transition: all 0.5s;
+  transition: all 2.5s;
 }
 
 .say-hi-r {
@@ -33,7 +34,7 @@
   color: #fff;
   font-size: 120px;
   transform: translate(520px, 0);
-  transition: all 0.5s;
+  transition: all 2.5s;
 }
 
 .say-hi-l.visible {
@@ -42,20 +43,6 @@
 
 .say-hi-r.visible {
   transform: translate(0, 0);
-}
-
-.say-hello {
-  display: block;
-  position: relative;
-  width: 28%;
-  height: 30%;
-  top: 20%;
-  left: 43%;
-  margin-top: -50px;
-  margin-right: 20%;
-  background-color: black;
-  visibility: hidden;
-  opacity: 0;
 }
 
 // .video {
@@ -158,6 +145,11 @@ MODAL BELOW
   text-align: left;
   background: rgba(0, 0, 0, 0.9);
   transition: opacity 0.25s ease;
+}
+
+.modal-inner-text {
+  font-size: 16px;
+  color: black !important;
 }
 
 .modal__bg {

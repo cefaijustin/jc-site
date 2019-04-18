@@ -84,7 +84,7 @@ body {
   -moz-animation: fadein 100ms ease-in forwards; /* Firefox */
   -webkit-animation: fadein 100ms ease-in forwards; /* Safari and Chrome */
   -o-animation: fadein 100ms ease-in forwards; /* Opera */
-  animation: fadein 100ms ease-in forwards;
+  animation: fadein 100ms ease-in forwards, arrow-pulse 1s infinite;
   -moz-animation-delay: 3.8s;
   -webkit-animation-delay: 3.8s;
   -o-animation-delay: 3.8s;
@@ -93,6 +93,19 @@ body {
 
 .down-arrow:hover {
   transform: scale(1.3) rotate(360deg);
+}
+
+@keyframes arrow-pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes fadein {
@@ -156,7 +169,7 @@ body {
 
 .about-h3 {
   text-align: center;
-  font-size: 35px !important;
+  font-size: 35px;
   font-weight: bolder;
   margin-top: 100px;
   margin-bottom: -20px;
@@ -342,13 +355,6 @@ p {
   animation: line 0.5s linear forwards;
 }
 
-/*
-
-ORIGINAL STYLING - BOX ON ONE SIDE 
-WITH DESCTRIPTION ADJACENT
-
-*/
-
 .box {
   float: left;
   width: 42.5%;
@@ -470,13 +476,7 @@ WITH DESCTRIPTION ADJACENT
   }
 }
 
-@media (min-width: 250px) and (max-width: 600px) {
-  .about-top h3 {
-    margin-top: 15%;
-    font-size: 35px;
-    transition: all 0.3s;
-  }
-
+@media (min-width: 250px) and (max-width: 750px) {
   .social-links1 li {
     display: inline-block;
     float: none;
@@ -503,9 +503,6 @@ WITH DESCTRIPTION ADJACENT
   .made-by p {
     display: none;
   }
-}
-
-@media (min-width: 250px) and (max-width: 750px) {
   .about-container {
     width: 100%;
     height: 100vh;
@@ -521,16 +518,14 @@ WITH DESCTRIPTION ADJACENT
     font-size: 16px;
   }
   .about-top h3 {
-    font-size: 35px;
+    font-size: 23px;
+    margin-top: 15%;
+    transition: all 0.3s;
   }
 
   .about-top h1 {
     font-size: 110px;
     transition: all 0.3s;
-  }
-
-  .type-active h3 {
-    font-size: 10px !important;
   }
 
   .footer {
@@ -545,19 +540,6 @@ WITH DESCTRIPTION ADJACENT
 
   .down-arrow {
     margin-top: -10px;
-  }
-
-  .jclogo {
-    float: left;
-    padding-top: 4px;
-    padding-left: 2px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    margin-left: 20px;
-    margin-top: 20px;
-    height: 25px;
-    width: 30px;
-    transition: all ease-in-out 250ms;
   }
 
   .social-links li {
