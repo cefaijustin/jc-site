@@ -111,8 +111,8 @@
   position: absolute;
   background: #15ad9e;
   border-color: 1px solid black;
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   margin: 10px 10px;
   top: 40%;
   left: 13px;
@@ -728,21 +728,6 @@ figure.effect-slideright:hover h2 {
   }
 }
 
-@media (min-width: 800px) and (max-width: 900px) {
-  .outer-box {
-    width: 70% !important;
-  }
-}
-
-@media (min-width: 250px) and (max-width: 664px) {
-  .grid .one-half {
-    width: 100%;
-  }
-  .grid figure {
-    width: 100%;
-  }
-}
-
 .skillst9 {
   width: 100%;
   color: #34495e;
@@ -810,4 +795,34 @@ figure.effect-slideright:hover h2 {
   font-weight: 400;
   color: #fdfdfd;
   font-size: 9px;
+}
+
+@media (min-width: 250px) and (max-width: 900px) {
+  .grid .one-half {
+    width: 100%;
+  }
+  .grid figure {
+    width: 100%;
+  }
+  .outer-box {
+    width: 70% !important;
+  }
+
+  .project {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 700px) {
+  .grid {
+    border: 1px solid black;
+  }
+
+  .grid:hover h2 {
+    font-size: 14px;
+  }
+
+  .grid-figure p {
+    font-size: 65%;
+  }
 }
