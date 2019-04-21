@@ -171,3 +171,26 @@
     <br class="clear" />
   </div>
 </div>  
+
+<script>
+
+$(document).ready(function() {
+    $(".invert").click(function() {
+      var $this = $(this);
+      $("html").toggleClass("inversed");
+      $this.toggleClass("invert");
+      if ($this.hasClass("invert")) {
+        $this.text("go dark");
+      } else {
+        $this.text("go light").css({
+          all: "unset",
+          cursor: "pointer",
+          color: "#15ad9e",
+          "font-size": "18px",
+          top: "21px",
+          right: "23px"
+        });
+      }
+    });
+  });
+  </script>
