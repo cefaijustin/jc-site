@@ -4,9 +4,7 @@
     <h4 class="h4-web">I enjoy learning</h4>
   </div>    
 
-
-
-  <div class="cert-container">
+  <div class="cert-container-1">
     <div class="box1 grid-sub">
       <%= image_tag "firehose.jpg", class: "full-width-cert"%>
     </div>
@@ -14,50 +12,32 @@
     <p class="cert-subtitle">Dec. 2017 - Oct. 2018</p> 
   </div>
 
-  
-
-  <div class="cert-container">
+  <div class="cert-container-1">
       <div class="box1 grid-sub">
         <%= image_tag "udemy-js.jpg", class: "full-width-cert" %>
       </div>
     <h4 class="h4-subtitle">JavaScript: the weird parts</h4>
     <p class="cert-subtitle">Nov. 2018</p> 
-
   </div>
 
-    <br class="clear" />
+  <br class="clear" />
 
-    <div class="cert-container">
-        <div class="box1 grid-sub">
-          <%= image_tag "udemy-algos.jpg", class: "full-width-cert" %>
-        </div>
-      <h4 class="h4-subtitle">algorithms + data structures</h4>
-      <p class="cert-subtitle">Dec. 2018</p> 
-    </div>
+  <div class="cert-container-2">
+      <div class="box1 grid-sub">
+        <%= image_tag "udemy-algos.jpg", class: "full-width-cert" %>
+      </div>
+    <h4 class="h4-subtitle">algorithms + data structures</h4>
+    <p class="cert-subtitle">Dec. 2018</p> 
+  </div>
 
-    <div class="cert-container">
-        <div class="box1 grid-sub">
-          <%= image_tag "udemy-shopify.jpg", class: "full-width-cert"%>
-        </div>
-      <h4 class="h4-subtitle">shopify themes from scratch</h4>
-      <p class="cert-subtitle">Feb. 2019</p> 
-    </div>
+  <div class="cert-container-2">
+      <div class="box1 grid-sub">
+        <%= image_tag "udemy-shopify.jpg", class: "full-width-cert"%>
+      </div>
+    <h4 class="h4-subtitle">shopify themes from scratch</h4>
+    <p class="cert-subtitle">Feb. 2019</p> 
+  </div>
 
-    <div class="bottom-line"></div>
-  </div>  
+  <div class="bottom-line"></div>
+</div>  
 
-  <script>
-  
-  $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".cert-container")
-
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-  })
-  
-  </script>

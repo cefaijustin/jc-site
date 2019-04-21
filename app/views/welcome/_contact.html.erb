@@ -15,7 +15,7 @@
 			  <label class="modal__bg" for="modal-2"></label>
 			  <div class="modal__inner-contact">
 			    <label class="modal__close" for="modal-2"></label>
-			    <p class="modal-inner-text">Currently entertaining new opportunities. <br/><br/> Let's talk!</p>
+			    <p class="modal-inner-text">Currently entertaining new opportunities. <br/><br/> Let&#39s talk!</p>
 			    <%= image_tag "arrow-down.svg", class: "arrow bounce" %>
 			    <br />
 			    <a href="mailto:hello@justincefai.co"><div><%= image_tag "letter.svg", class: "letter" %></div></a>
@@ -28,28 +28,40 @@
 
 <script>
 			
-	$(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".say-hi-l")
+# $(document).ready(function () {
+# 				var $horizontal = $('.say-hi-l');
+		
+# 				$(window).scroll(function () {
+# 						var s = $(this).scrollTop(),
+# 								d = $(document).height(),
+# 								c = $(this).height();
+		
+# 						scrollPercent = (s / (d - c) * 6);
+		
+# 						var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+		
+# 						$horizontal.css({
+# 							'right': 'calc(82% - 150px + ' + position + 'px)'
+# 					});
+# 				});
+# 		});
+		
+# 		$(document).ready(function () {
+# 				var $horizontalR = $('.say-hi-r');
 
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-			}
-		})	
-			
-			$(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".say-hi-r")
-
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-	})
+# 				$(window).scroll(function () {
+# 						var s = $(this).scrollTop(),
+# 								d = $(document).height(),
+# 								c = $(this).height();
+		
+# 						scrollPercent = (s / (d - c) * 6);
+		
+# 						var position = (scrollPercent * ($(document).width() - $horizontalR.width()));
+		
+# 						$horizontalR.css({
+# 							'left': 'calc(82% - 150px + ' + position + 'px)'
+# 					});
+# 				});
+# 		});
 	
 </script>

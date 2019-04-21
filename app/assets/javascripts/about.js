@@ -1,0 +1,36 @@
+$(document).ready(function() {
+  var $horizontal = $(".about-left");
+
+  $(window).scroll(function() {
+    var s = $(this).scrollTop(),
+      d = $(document).height(),
+      c = $(this).height();
+
+    scrollPercent = (s / (d - c)) * 6;
+
+    var position = scrollPercent * ($(document).width() - $horizontal.width());
+
+    $horizontal.css({
+      right: "calc(82% - 150px + " + position + "px)"
+    });
+  });
+});
+
+$(document).ready(function() {
+  var $horizontalR = $(".about-right");
+  var $title = $(".about-top");
+
+  $(window).scroll(function() {
+    var s = $(this).scrollTop(),
+      d = $(document).height(),
+      c = $(this).height();
+
+    scrollPercent = (s / (d - c)) * 6;
+
+    var position = scrollPercent * ($(document).width() - $horizontalR.width());
+
+    $horizontalR.css({
+      left: "calc(82% - 150px + " + position + "px)"
+    });
+  });
+});

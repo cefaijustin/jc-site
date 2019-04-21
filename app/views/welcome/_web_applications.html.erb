@@ -1,192 +1,173 @@
 <div class="background-web" id="web-apps">
-<div class="top-line"></div>
+  <div class="top-line"></div>
   <div class="app-container">
-  <div class="title-box">
-    <h3 class="h3-web">{ skills }</h3>
-    <h4 class="h4-web">some things I'm familiar with</h4>
-  </div>
-
-  <div class="sidenav">
-    <div class="circle">
-    <a href="mailto:hello@justincefai.co">
-      <p class="circle-text"><%= image_tag "letter.svg"%></p>
-      </a>
+    <div class="title-box">
+      <h3 class="h3-web">{ skills }</h3>
+      <h4 class="h4-web">some things I&#39m familiar with</h4>
     </div>
-  </div>
 
-  <div class="rightsidenav">
-    <button class="invert">
-        <p>go dark</p>
-    </button>
-  </div>
+    <div class="sidenav">
+      <div class="circle">
+      <a href="mailto:hello@justincefai.co">
+        <p class="circle-text"><%= image_tag "letter.svg"%></p>
+        </a>
+      </div>
+    </div>
 
-    <div role="tabpanel" class="tab-pane fade active in" id="style9">
+    <div class="rightsidenav">
+      <button class="invert">
+          <p>go dark</p>
+      </button>
+    </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="skillst9">
-              <div class="skillbar">
-                <div class="count-bar" style="width: 80%;"></div>
-                <div class="title">HTML</div> 
-              </div>
-              <div class="skillst9">
-              <div class="skillbar" data-percent="60%">
-                <div class="count-bar" style="width: 60%;"></div>
-                <div class="title">CSS</div> 
-              </div>
-              <div class="skillbar" data-percent="50%">
-                <div class="title">Ruby / Rails</div>
-                <div class="count-bar" style="width: 50%;"></div>
-              </div>
-              <div class="skillbar" data-percent="65%">
-                <div class="title">JavaScript</div>
-                <div class="count-bar" style="width: 62%;"></div>
-              </div>
-              <div class="skillbar" data-percent="45%">
-                <div class="title">jQuery</div>
-                <div class="count-bar" style="width: 45%;"></div>
-              </div>
-              <div class="skillbar" data-percent="70%">
-                <div class="title">React</div>
-                <div class="count-bar" style="width: 35%;"></div>
-              </div>
-              <div class="skillbar" data-percent="50%">
-                <div class="title">PostgreSQL</div>
-                <div class="count-bar" style="width: 50%;"></div>
-              </div>
-              <div class="skillbar" data-percent="65%">
-                <div class="title">Photoshop</div>
-                <div class="count-bar" style="width: 65%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3"></div>
+
+      <div class="progress-bar" data-percentage="80%">
+        <h4 class="progress-title-holder">
+          <span class="progress-title">HTML</span>   
+        </h4>
+        <div class="progress-content-outer">
+          <div class="progress-content"></div>
         </div>
       </div>
+
+      <div class="progress-bar" data-percentage="60%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">CSS</span>
+        </h4>
+        <div class="progress-content-outer">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+    
+      <div class="progress-bar" data-percentage="65%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">JavaScript</span>
+        </h4>
+        <div class="progress-content-outer">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+
+      <div class="progress-bar" data-percentage="45%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">jQuery</span>
+        </h4>
+        <div class="progress-content-outer">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+
+      <div class="progress-bar" data-percentage="60%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">Ruby / Rails</span>
+        </h4>
+        <div class="progress-content-outer">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+
+      <div class="progress-bar" data-percentage="35%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">React</span>
+        </h4>
+        <div class="progress-content-outer">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+
+      <div class="progress-bar" data-percentage="50%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">PostgreSQL</span>
+        </h4>
+        <div class="progress-content-outer">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+
+      <div class="progress-bar" data-percentage="65%">
+        <h4 class="progress-title-holder clearfix">
+          <span class="progress-title">Photoshop</span>
+        </h4>
+        <div class="progress-content-outer">
+          <div class="progress-content"></div>
+        </div>
+      </div>
+ 
     </div>
 
     <br />
 
     <hr class="hr-blog"/>
 
-<div class="title-box">
-  <h3 class="h3-web">{ projects }</h3>
-  <h4 class="h4-web">freelance & study</h4>
-</div>    
-    <div class="outer-box">
-      <div class="box grid project">
-        <figure class="effect-slideleft one-half">
-          <%= image_tag "todo.png", class: "full-width-web" %>
-          <figcaption>
-            <h2>Todo<br><span>Application</span></h2>
-            <p>JavaScript, Ruby on Rails, JQuery, HTML, CSS, PostgreSQL</p><br><br>
-            <a target="_blank" rel="noopener noreferrer" href="https://todo-justin-cefai.herokuapp.com/" class="button">View</a>
-          </figcaption>     
-        </figure>
+    <div class="title-box">
+      <h3 class="h3-web">{ projects }</h3>
+      <h4 class="h4-web">some things I&#39ve made</h4>
+    </div>    
+      <div class="outer-box-l-1">
+        <div class="box grid project">
+          <figure class="effect-slideleft one-half">
+            <%= image_tag "todo.png", class: "full-width-web" %>
+            <figcaption>
+              <h2>Todo<br><span>Application</span></h2>
+              <p>JavaScript, Ruby on Rails, JQuery, HTML, CSS, PostgreSQL</p><br><br>
+              <a target="_blank" rel="noopener noreferrer" href="https://todo-justin-cefai.herokuapp.com/" class="button">View</a>
+            </figcaption>     
+          </figure>
+        </div>
+        <h4 class="h4-project-subtitle">to-do application</h4>
       </div>
-      <h4 class="h4-project-subtitle">to-do application</h4>
+
+      <div class="outer-box-r-1">
+        <div class="box grid project">
+          <figure class="effect-slideleft one-half">
+            <%= image_tag "nomster.png", class: "full-width-web" %>
+            <figcaption>
+              <h2>Yelp<br><span>Clone</span></h2>
+              <p>Google Maps API, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS
+              </p>
+              <a target="_blank" rel="noopener noreferrer" href="http://nomster-justin-cefai.herokuapp.com/" class="button">View</a>
+            </figcaption>     
+          </figure>
+        </div>
+        <h4 class="h4-project-subtitle">yelp clone</h4>
+      </div>
+
+      <br class="clear" />
+
+      <div class="outer-box-l-2">
+        <div class="box grid project">
+          <figure class="effect-slideleft one-half">
+            <%= image_tag "flixter.png", class: "full-width-web" %>
+            <figcaption>
+              <h2>Two-Sided<br><span>Market Place</span></h2>
+              <p>Devise, Carrierwave, Stripe, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS</p><br><br>
+              <a target="_blank" rel="noopener noreferrer" href="http://flixter-justin-cefai.herokuapp.com/" class="button">View</a>
+            </figcaption>     
+          </figure>
+        </div>
+        <h4 class="h4-project-subtitle">two-sided marketplace</h4>
+      </div>
+
+      <div class="outer-box-r-2">
+        <div class="box grid project">
+          <figure class="effect-slideleft one-half">
+            <%= image_tag "grammable.png", class: "full-width-web" %>
+            <figcaption>
+              <h2>Instagram<br><span>Clone</span></h2>
+              <p>FactoryBot, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS, built using test driven development</p><br><br>
+              <a target="_blank" rel="noopener noreferrer" href="http://grammable-justin-cefai.herokuapp.com/" class="button">View</a>
+            </figcaption>     
+          </figure>
+        </div>
+        <h4 class="h4-project-subtitle">instagram clone</h4>
+      </div>  
     </div>
 
-    <div class="outer-box">
-      <div class="box grid project">
-        <figure class="effect-slideleft one-half">
-          <%= image_tag "nomster.png", class: "full-width-web" %>
-          <figcaption>
-            <h2>Yelp<br><span>Clone</span></h2>
-            <p>Google Maps API, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS
-            </p>
-            <a target="_blank" rel="noopener noreferrer" href="http://nomster-justin-cefai.herokuapp.com/" class="button">View</a>
-          </figcaption>     
-        </figure>
-      </div>
-      <h4 class="h4-project-subtitle">yelp clone</h4>
-    </div>
-
+    <hr class="hr-blog"/>
+    <hr class="hr-blog"/>
     <br class="clear" />
-
-    <div class="outer-box">
-      <div class="box grid project">
-        <figure class="effect-slideleft one-half">
-          <%= image_tag "flixter.png", class: "full-width-web" %>
-          <figcaption>
-            <h2>Two-Sided<br><span>Market Place</span></h2>
-            <p>Devise, Carrierwave, Stripe, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS</p><br><br>
-            <a target="_blank" rel="noopener noreferrer" href="http://flixter-justin-cefai.herokuapp.com/" class="button">View</a>
-          </figcaption>     
-        </figure>
-      </div>
-      <h4 class="h4-project-subtitle">two-sided marketplace</h4>
-    </div>
-
-    <div class="outer-box">
-      <div class="box grid project">
-        <figure class="effect-slideleft one-half">
-          <%= image_tag "grammable.png", class: "full-width-web" %>
-          <figcaption>
-            <h2>Instagram<br><span>Clone</span></h2>
-            <p>FactoryBot, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS, built using test driven development</p><br><br>
-            <a target="_blank" rel="noopener noreferrer" href="http://grammable-justin-cefai.herokuapp.com/" class="button">View</a>
-          </figcaption>     
-        </figure>
-      </div>
-      <h4 class="h4-project-subtitle">instagram clone</h4>
-    </div>  
-  </div>
-
-  <hr class="hr-blog"/>
-
-  <br class="clear" />
-		<br class="clear" />
     <br class="clear" />
-    
+    <br class="clear" />
   </div>
 </div>  
-
-  <script>
-    $('.invert').click(function () {
-      var $this = $(this);
-      $("html").toggleClass("inversed");
-      $this.toggleClass('invert');
-      if($this.hasClass('invert')){
-        $this.text('go dark');
-      } else {
-        $this.text('go light').css({"all": "unset", "cursor": "pointer", "color": "#15ad9e", "font-size": "18px", "top": "25px", "right": "25px" });
-      }
-    });
-
-    $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-      if (sT >= 800 && sT <= 4500 ) {
-        $('.circle').css({"opacity": "1"});
-      } else {
-        $('.circle').css({"opacity": "0"});
-      }
-  })
-
-  $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".outer-box")
-
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-  })
-
-  $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".container")
-
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-  })
-  
-  </script>  

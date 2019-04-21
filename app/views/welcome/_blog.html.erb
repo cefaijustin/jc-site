@@ -2,7 +2,7 @@
 
 <div class="title-box">
   <h3 class="h3-web">{ blog }</h3>
-  <h4 class="h4-web">some things I've written</h4>
+  <h4 class="h4-web">some things I&#39ve written</h4>
 </div>
 		<div class="blog-box">
       <div class="blog-box-right">
@@ -83,57 +83,6 @@
 <hr class="hr-blog"/>
 <br />
 </div>
-
-<script>
-
-$(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".blog-box-left")
-
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-  })
-  
-  $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".blog-box-right")
-
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-  })
-
-  $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".blog-box-left-2")
-
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-  })
-  
-  $(window).scroll (function () {
-    var sT = $(this).scrollTop();
-    var sB = sT + $(window).height()
-    var tag = $(".blog-box-right-2")
-
-      if ($(tag).position().top < sB ) {
-        $(tag).addClass("visible")
-      } else {
-        $(tag).removeClass("visible")
-      }
-  })
-  </script>
 
 
 

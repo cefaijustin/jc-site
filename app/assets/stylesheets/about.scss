@@ -12,10 +12,6 @@
   transition: all 0.3s;
 }
 
-.about-container.visible {
-  background-color: black;
-}
-
 html,
 body {
   max-width: 100%;
@@ -224,6 +220,11 @@ body {
 
 .nav-container {
   width: 95%;
+  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.5s; /* Firefox < 16 */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+  -o-animation: fadein 2.5s; /* Opera < 12.1 */
+  animation: fadein 2.5s;
 }
 
 nav {

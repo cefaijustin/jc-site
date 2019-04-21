@@ -16,17 +16,8 @@
   position: absolute;
   left: 50%;
   top: 45%;
+  cursor: pointer;
   transform: translate(-50%, -50%);
-}
-
-.say-hi:hover .say-hi-l {
-  color: #15ad9e;
-  transform: scale(1.2, 1.1);
-}
-
-.say-hi:hover .say-hi-r {
-  color: #15ad9e;
-  transform: scale(1.2, 1.1);
 }
 
 .say-hi-l {
@@ -34,6 +25,7 @@
   color: #fff;
   font-size: 110px;
   margin-bottom: -8%;
+  -webkit-transform: translate(-520px, 0);
   transform: translate(-520px, 0);
   transition: all 0.5s;
 }
@@ -43,6 +35,7 @@
   color: #fff;
   min-width: 400px;
   font-size: 110px;
+  -webkit-transform: translate(520px, 0);
   transform: translate(520px, 0);
   transition: all 0.5s;
 }
@@ -389,12 +382,14 @@ p img {
   }
 
   .say-hi-l {
-    float: none;
+    position: relative;
+    display: inline-block;
     font-size: 60px;
   }
 
   .say-hi-r {
-    float: none;
+    position: relative;
+    display: inline-block;
     font-size: 60px;
     min-width: 100px;
   }
