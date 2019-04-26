@@ -729,75 +729,6 @@ figure.effect-slideright:hover h2 {
   transform: translate3d(0, 0, 0);
 }
 
-/* MEDIA SCREEN SIZES */
-@media (min-width: 250px) and (max-width: 1200px) {
-  .background-web {
-    width: 100%;
-    height: auto !important;
-  }
-
-  .grid figure {
-    width: auto;
-    float: left;
-  }
-
-  .grid figure figcaption {
-    font-size: 90%;
-  }
-}
-@media (min-width: 250px) and (max-width: 900px) {
-  .grid figure {
-    width: 100%;
-    height: auto;
-  }
-  .grid figure img {
-    min-width: 100%;
-  }
-  .grid figure figcaption {
-    font-size: 90%;
-  }
-
-  .circle {
-    display: none;
-  }
-
-  .invert {
-    display: none;
-  }
-
-  .sidenav {
-    background-color: none;
-    background-image: none;
-  }
-
-  .rightsidenav {
-    background-color: none;
-    background-image: none;
-    display: none;
-  }
-
-  .h3-web {
-    color: black;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 50px;
-    font-weight: bolder;
-    margin-top: 100px;
-    margin-bottom: -10px;
-    padding: 5px;
-    transition: all ease-in-out 200ms;
-  }
-
-  .outer-box {
-    width: 100%;
-  }
-
-  .invert {
-    display: none;
-  }
-}
-
 .container {
   width: 70%;
   margin: 0 auto;
@@ -850,7 +781,7 @@ figure.effect-slideright:hover h2 {
 }
 
 .progress-content {
-  width: 0%;
+  width: inherit;
   height: 8px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -859,6 +790,79 @@ figure.effect-slideright:hover h2 {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background-color: #15ad9e;
+}
+
+/* MEDIA SCREEN SIZES */
+@media (min-width: 250px) and (max-width: 1200px) {
+  .background-web {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .grid figure {
+    width: auto;
+    float: left;
+  }
+
+  .grid figure figcaption {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 900px) {
+  .progress-content {
+    width: inherit;
+  }
+  .grid figure {
+    width: 100%;
+    height: auto;
+  }
+  .grid figure img {
+    min-width: 100%;
+  }
+  .grid figure figcaption {
+    font-size: 90%;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .invert {
+    display: none;
+  }
+
+  .sidenav {
+    background-color: none;
+    background-image: none;
+  }
+
+  .rightsidenav {
+    background-color: none;
+    background-image: none;
+    display: none;
+  }
+
+  .h3-web {
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    padding: 5px;
+    transition: all ease-in-out 200ms;
+  }
+
+  .outer-box {
+    width: 100%;
+  }
+
+  .invert {
+    display: none;
+  }
 }
 
 @media (min-width: 250px) and (max-width: 900px) {
