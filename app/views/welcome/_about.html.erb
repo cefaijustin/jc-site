@@ -1,13 +1,13 @@
 <div class="about-container" id="about-one">
 	<div class="nav-container">
-		<a class="nav-link"><%= image_tag "jclogo.png", class: "jclogo"%></a>
+		<a class="nav-link"><%= image_tag "jclogo.png", alt: "logo", class: "jclogo"%></a>
 
 			<nav>
 				<ul>		
-					<li><a href="#web-apps">Skills & Projects</a></li>
-					<li><a href="#blog">Blog</a></li>
-					<li><a href="#certificates">Certificates</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a aria-label="web applications" href="#web-apps">Skills & Projects</a></li>
+					<li><a aria-label="medium blog" href="#blog">Blog</a></li>
+					<li><a aria-label="certificates" href="#certificates">Certificates</a></li>
+					<li><a aria-label="contact info" href="#contact">Contact</a></li>
 				</ul>	
 			</nav>	
 	</div>		
@@ -31,19 +31,19 @@
 	 <span id="typed"></span>	
 	</div>
 	<div id="down-arrow" class="slideDown">
-		<a href="#web-apps"><%= image_tag "down-arrow.png", class: "down-arrow"%>
+		<a href="#web-apps" aria-label="Web Applications"><%= image_tag "down-arrow.png", alt: "down arrow", class: "down-arrow"%>
 	</div>
 
 <div class="footer">
   <div class="social-links1">
 		<ul>
-				<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/cefaijustin"><i class="fab fa-github-square links"></a></i></li>
+				<li><a target="_blank" rel="noopener noreferrer" aria-label="github" href="https://github.com/cefaijustin"><i class="fab fa-github-square links"></a></i></li>
 
-				<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/justin-cefai/"><i class="fab fa-linkedin links"></i></a></li>
+				<li><a target="_blank" rel="noopener noreferrer" aria-label="linkedin" href="https://www.linkedin.com/in/justin-cefai/"><i class="fab fa-linkedin links"></i></a></li>
 
-				<li><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@cefaijustin"><i class="fab fa-medium links"></i></a></li>
+				<li><a target="_blank" rel="noopener noreferrer" aria-label="medium blog" href="https://medium.com/@cefaijustin"><i class="fab fa-medium links"></i></a></li>
 
-				<li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/justincefai/?hl=en"><i class="fab fa-instagram links"></i></a></li>
+				<li><a target="_blank" rel="noopener noreferrer" aria-label="instagram" href="https://www.instagram.com/justincefai/?hl=en"><i class="fab fa-instagram links"></i></a></li>
 			</ul>	
 			<div class="made-by">
 				<p>© justin cefai | 2018</p>
