@@ -37,4 +37,8 @@ document.addEventListener("turbolinks:load", function() {
       });
     });
   });
+
+  $(".jclogo").on("click", function() {
+    $("nav").addClass("visible");
+  });
 });

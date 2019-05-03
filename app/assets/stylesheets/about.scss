@@ -215,6 +215,7 @@ body {
   margin-top: 20px;
   height: 35px;
   width: 40px;
+  cursor: pointer;
   transition: all ease-in-out 250ms;
 }
 
@@ -229,6 +230,14 @@ body {
 
 nav {
   float: left;
+  transition: all 1s;
+  opacity: 0;
+  transform: translate(0, -110px);
+}
+
+nav.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 nav ul {

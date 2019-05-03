@@ -9,12 +9,13 @@
 }
 
 .top-line {
-  background-color: black;
-  height: 15px;
+  background-color: #171d22;
+  height: 4px;
+  opacity: 0.9;
   top: 0px;
   width: 100%;
   z-index: 1.5;
-  box-shadow: 1px 1px 3px #363636;
+  box-shadow: 1px 1px 6px #171d22;
 }
 
 .box {
