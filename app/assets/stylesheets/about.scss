@@ -16,6 +16,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  font-weight: lighter;
 }
 
 .about-top {
@@ -229,15 +230,8 @@ body {
 }
 
 nav {
-  float: left;
+  float: right;
   transition: all 1s;
-  opacity: 0;
-  transform: translate(0, -110px);
-}
-
-nav.visible {
-  opacity: 1;
-  transform: translate(0, 0);
 }
 
 nav ul {
@@ -248,7 +242,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 70px;
+  margin-left: 50px;
   padding-top: 38px;
   position: relative;
 }
@@ -264,14 +258,14 @@ nav a::before {
   display: block;
   height: 2.5px;
   width: 0%;
-  background-color: #228fe8;
+  background-color: black;
   position: absolute;
-  top: 0;
+  top: 48px;
   transition: all ease-in-out 200ms;
 }
 
 nav a:hover::before {
-  width: 150%;
+  width: 100%;
 }
 
 h2 {
