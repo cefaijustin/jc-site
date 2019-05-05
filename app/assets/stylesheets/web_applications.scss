@@ -57,6 +57,44 @@
   padding-top: 20px;
 }
 
+.outer-box-video {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: center;
+  opacity: 0;
+  transform: translate(0, 250px);
+  transition: all 0.5s;
+}
+
+.outer-box-video.visible {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+video {
+  width: 90%;
+  height: auto;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.video-box {
+  float: none;
+  width: fit-content;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.h4-video-subtitle {
+  font-weight: lighter;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 13%;
+}
+
 .hr-web {
   color: black;
   margin-top: 100px;
@@ -108,6 +146,10 @@
 }
 
 .inversed h4 {
+  color: white;
+}
+
+.inversed .h4-video-subtitle {
   color: white;
 }
 
@@ -284,8 +326,7 @@ a.button:hover {
 }
 
 .grid {
-  border: 1.5px solid black;
-  border-radius: 1%;
+  box-shadow: 1px 1px 4px grey;
   display: inline-block;
   overflow: hidden;
   float: none;
@@ -911,10 +952,6 @@ figure.effect-slideright:hover h2 {
 }
 
 @media (min-width: 250px) and (max-width: 700px) {
-  .grid {
-    border: 1px solid black;
-  }
-
   .grid:hover h2 {
     font-size: 14px;
   }
