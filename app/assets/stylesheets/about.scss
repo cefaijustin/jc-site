@@ -26,10 +26,10 @@
   transition: all 0.3s;
 }
 
-.logo-bg .visible {
+.logo-bg.visible {
   opacity: 1;
   visibility: visible;
-  z-index: 9000;
+  z-index: 90009;
 }
 
 html,

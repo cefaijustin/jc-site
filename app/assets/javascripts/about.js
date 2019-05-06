@@ -22,7 +22,7 @@ document.addEventListener("turbolinks:load", function() {
     var button = document.getElementById("jclogo");
 
     function cover() {
-      $("#logo-bg").toggleClass("visible");
+      $(".logo-bg").toggleClass("visible");
     }
     button.addEventListener("click", cover);
   });
