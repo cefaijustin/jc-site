@@ -785,6 +785,7 @@ figure.effect-slideright:hover h2 {
 }
 
 .progress-bar {
+  position: relative;
   padding: 5px;
   overflow: hidden;
 }
@@ -852,10 +853,6 @@ figure.effect-slideright:hover h2 {
 }
 
 @media (min-width: 250px) and (max-width: 900px) {
-  .progress-content {
-    width: inherit;
-  }
-
   .grid figure {
     width: 100%;
     height: auto;
