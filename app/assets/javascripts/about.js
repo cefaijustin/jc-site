@@ -19,6 +19,15 @@ document.addEventListener("turbolinks:load", function() {
   });
 
   $(document).ready(function() {
+    var button = document.getElementById("jclogo");
+
+    function cover() {
+      $("#logo-bg").toggleClass("visible");
+    }
+    button.addEventListener("click", cover);
+  });
+
+  $(document).ready(function() {
     var $horizontalR = $(".about-right");
     var $title = $(".about-top");
 
