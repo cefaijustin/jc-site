@@ -13,9 +13,24 @@
 }
 
 .logo-bg {
-  background-color: black;
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #000000 0%,
+    #141516 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #000000 0%,
+    #141516 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #141516 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  height: 22%;
   width: 100%;
-  height: 100%;
   position: absolute;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,12 +39,58 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  transform: translate(0, -300px);
 }
 
 .logo-bg.visible {
+  overflow: hidden;
   opacity: 1;
   visibility: visible;
   z-index: 90009;
+  transform: translate(0, 0);
+}
+
+.close-bg {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: black;
+  top: 18px;
+  left: 30px;
+  font-size: 44px;
+  color: #15ad93;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.bio-image {
+  position: relative;
+  top: -101px;
+  left: 3%;
+  transform: scale(0.4);
+  display: block;
+  float: left;
+}
+
+.bio-box {
+  position: relative;
+  height: 60%;
+  width: 40%;
+  margin-left: -20px;
+  text-align: left;
+  padding: 10px;
+  float: left;
+}
+
+.bio-text {
+  padding-top: 50px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
 }
 
 html,
@@ -236,6 +297,10 @@ body {
   width: 40px;
   cursor: pointer;
   transition: all ease-in-out 250ms;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .nav-container {

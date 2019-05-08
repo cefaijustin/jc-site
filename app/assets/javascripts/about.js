@@ -22,9 +22,18 @@ document.addEventListener("turbolinks:load", function() {
     var button = document.getElementById("jclogo");
 
     function cover() {
-      $(".logo-bg").toggleClass("visible");
+      $(".logo-bg").addClass("visible");
     }
     button.addEventListener("click", cover);
+  });
+
+  $(document).ready(function() {
+    var button = document.getElementById("close-bg");
+
+    function uncover() {
+      $(".logo-bg").removeClass("visible");
+    }
+    button.addEventListener("click", uncover);
   });
 
   $(document).ready(function() {
