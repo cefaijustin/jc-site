@@ -18,6 +18,11 @@
   box-shadow: 1px 1px 6px #171d22;
 }
 
+.title-box-skills {
+  width: 100%;
+  margin: 80px auto;
+}
+
 .box {
   display: inline-block;
   width: 40%;
@@ -956,5 +961,20 @@ figure.effect-slideright:hover h2 {
 
   .grid-figure p {
     font-size: 65%;
+  }
+
+  .container {
+    visibility: hidden;
+    display: none;
+  }
+
+  .hr-blog {
+    visibility: hidden;
+    display: none;
+  }
+
+  .title-box-skills {
+    visibility: hidden;
+    display: none;
   }
 }
