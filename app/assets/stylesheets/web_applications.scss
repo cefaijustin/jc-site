@@ -60,6 +60,11 @@
   right: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  -webkit-animation: fadein 7.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 7.5s; /* Firefox < 16 */
+  -ms-animation: fadein 7.5s; /* Internet Explorer */
+  -o-animation: fadein 7.5s; /* Opera < 12.1 */
+  animation: fadein 7.5s;
 }
 
 .outer-box-video {
