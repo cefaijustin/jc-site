@@ -119,6 +119,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
+  transition: all 0.8s;
 }
 
 .about-left {
@@ -326,11 +327,11 @@ nav a {
 nav a::before {
   content: "";
   display: block;
-  height: 2.5px;
+  height: 1.5px;
   width: 0%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
-  top: 47px;
+  top: 60px;
   transition: all ease-in-out 200ms;
 }
 
