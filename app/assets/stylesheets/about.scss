@@ -10,6 +10,11 @@
   width: 100%;
   height: 100vh;
   transition: all 0.3s;
+  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.5s; /* Firefox < 16 */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+  -o-animation: fadein 2.5s; /* Opera < 12.1 */
+  animation: fadein 2.5s;
 }
 
 .logo-bg {
@@ -106,58 +111,36 @@ body {
   font-size: 55px;
   text-align: center;
   padding: 15px;
-  margin-top: 12vh;
+  width: 85vw;
+  height: 64vh;
+  background-color: #dce2e6;
+  margin-top: 5vh;
   margin-bottom: 0px;
-  margin-left: -14px;
+  margin-left: auto;
   margin-right: auto;
   align-self: center;
-  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2.5s; /* Firefox < 16 */
-  -ms-animation: fadein 2.5s; /* Internet Explorer */
-  -o-animation: fadein 2.5s; /* Opera < 12.1 */
-  animation: fadein 2.5s;
 }
 
 .about-left {
   position: absolute;
-  top: 20%;
-  right: calc(82% - 150px);
-  font-size: 330px;
-  color: #15ad93;
-  text-shadow: 0px 1px 3px black;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  display: inline-block;
+  padding-right: 10px;
+  white-space: nowrap;
+  top: 74%;
+  right: calc(25% - 150px);
+  font-size: 16px bold;
+  color: black;
 }
 
 .about-right {
   position: absolute;
-  top: 20%;
-  left: calc(82% - 150px);
-  font-size: 330px;
-  color: #15ad93;
+  display: inline-block;
+  top: 70%;
+  padding-left: 10px;
+  left: calc(92% - 150px);
+  font-size: 35px;
+  color: white;
   text-shadow: 0px 1px 3px black;
-  animation: 1s ease-out 0s 1 slideInFromRight;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-200%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(200%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .down-arrow {
@@ -259,7 +242,7 @@ body {
 
 .about-top h3 {
   margin: -20 auto;
-  margin-top: 50px;
+  margin-top: 113px;
   padding-bottom: 30px;
   color: black !important;
   font-size: 30px;
@@ -271,13 +254,14 @@ body {
 .typebox {
   align-content: right;
   padding-left: 15px;
-  padding-top: 0px;
-  font-size: 17px;
-  line-height: 1.6em;
+  padding-top: 54px;
+  padding-bottom: 25vh;
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.3em;
   margin-left: auto;
   margin-right: auto;
-  width: 380px;
-  margin-bottom: -10px !important;
+  width: 78vw;
 }
 
 .type-active {
@@ -557,6 +541,7 @@ p {
   .about-top {
     margin-top: 4vh;
     transition: all 0.3s;
+    height: 75vh;
   }
 
   .about-left {
@@ -609,7 +594,9 @@ p {
 
   .typebox {
     width: 90%;
-    font-size: 16px;
+    margin-top: 5vh;
+    padding-bottom: 10vh;
+    font-size: 25px;
   }
   .about-top h3 {
     font-size: 23px;

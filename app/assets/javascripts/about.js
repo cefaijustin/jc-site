@@ -7,13 +7,13 @@ document.addEventListener("turbolinks:load", function() {
         d = $(document).height(),
         c = $(this).height();
 
-      scrollPercent = (s / (d - c)) * 6;
+      scrollPercent = (s / (d - c)) * 8;
 
       var position =
         scrollPercent * ($(document).width() - $horizontal.width());
 
       $horizontal.css({
-        right: "calc(82% - 150px + " + position + "px)"
+        right: "calc(25% - 150px + " + position + "px)"
       });
     });
   });
@@ -51,7 +51,7 @@ document.addEventListener("turbolinks:load", function() {
         scrollPercent * ($(document).width() - $horizontalR.width());
 
       $horizontalR.css({
-        left: "calc(82% - 150px + " + position + "px)"
+        left: "calc(92% - 150px + " + position + "px)"
       });
     });
   });
