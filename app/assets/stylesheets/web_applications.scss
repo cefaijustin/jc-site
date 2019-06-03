@@ -5,7 +5,148 @@
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
+  height: fit-content;
+}
+
+.web_apps_all_bg {
+  position: absolute;
+  background-color: white;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 100;
+  overflow: hidden;
+  padding-top: 2vh;
+}
+
+.web_apps_all_bg.visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+.project-box-all {
+  display: inline-block;
+  margin: 0px;
+  width: 40vw;
+}
+
+.app-half {
+  display: inline-block;
+  width: 40vw;
+  max-width: 400px;
   height: auto;
+  margin: 25px 10px 10px 10px;
+  cursor: pointer;
+  transition: all 200ms;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: 1px 1px 3px black;
+  opacity: 0.8;
+
+  &:hover {
+    filter: opacity(0.95);
+    transform: translate(-1px, -2px);
+    box-shadow: 1px 2px 6px black;
+    opacity: 1;
+  }
+}
+
+.skill-icons {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 5px;
+  background: transparent;
+}
+
+.icon-small {
+  background: transparent;
+  float: left;
+  width: 20%;
+}
+
+.web-all-box {
+  width: 100vw;
+  height: 100vh;
+  z-index: 9009;
+}
+
+.close-bg-web {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: black;
+  top: 18px;
+  left: 30px;
+  font-size: 44px;
+  color: #15ad93;
+  cursor: pointer;
+  transition: all 0.4s;
+  z-index: 900;
+
+  &:hover {
+    color: white;
+    transform: scaleX(1.1);
+  }
+}
+
+#progressBar {
+  width: 445px;
+  height: 15px;
+  margin-left: 12vw;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: black;
+}
+#progressBar div {
+  height: 55%;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-top: 3.5px;
+  text-align: right;
+  line-height: 15px; /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #15ad93;
+}
+
+.h4-see-more {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: -3px;
+}
+
+.see-more-box {
+  display: inline-block;
+  margin: 0 auto;
+  width: 10vw;
+  height: 6vh;
+  background-color: white;
+  cursor: pointer;
+  border: 1.5px solid #dbd6b9;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 1px 1px 4px grey;
+  }
+}
+
+.see-more-btn {
+  margin: 10px;
+  width: 10vw;
+  height: auto;
+  background-color: #dce2e6;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px grey;
+  transition: all 0.3s;
+}
+
+.see-more-btn:hover {
+  transform: scale(1.1);
 }
 
 .top-line {
@@ -19,12 +160,23 @@
 }
 
 .title-box-skills {
-  width: 100%;
-  margin: 80px auto;
+  background-color: #f4f4dc;
+  width: 30%;
+  height: 75vh;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  float: left;
+  transition: all 1s;
+  transform: translate(-800px, 0);
+}
+
+.title-box-skills.visible {
+  transform: translate(0, 0);
 }
 
 .box {
   display: inline-block;
+  border: none !important;
   width: 40%;
   margin: 0;
   padding: 0;
@@ -67,11 +219,14 @@
   animation: fadein 7.5s;
 }
 
+.skills-container {
+  height: 80vh;
+  width: auto;
+}
+
 .outer-box-video {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
-  width: 70%;
-  max-width: 1200px;
   box-sizing: border-box;
   list-style: none;
   text-align: center;
@@ -86,23 +241,49 @@
 }
 
 video {
-  width: 90%;
+  width: 45vw;
+  max-width: 535px;
   height: auto;
   box-shadow: 0 0 5px grey;
 }
 
 .video-box {
-  float: none;
+  float: left;
   width: fit-content;
   overflow: hidden;
-  margin: 0 auto;
+  margin-left: 1vw;
+}
+
+.video-sub-box {
+  display: inline-block;
+}
+
+.project-box {
+  float: left;
+  width: 65vw;
+  margin-top: 20vh;
+}
+
+.title-box-web {
+  background-color: #f3f3dc;
+  width: 30%;
+  height: 70vh;
+  float: right;
+  margin-top: 15vh;
+  margin-right: 5vw;
+  transition: all 1s;
+  transform: translate(800px, 0);
+}
+
+.title-box-web.visible {
+  transform: translate(0, 0);
 }
 
 .h4-video-subtitle {
   font-weight: lighter;
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 13%;
+  font-size: 14px;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
 }
 
 .hr-web {
@@ -143,22 +324,6 @@ video {
   background-color: black;
 }
 
-.inversed p {
-  color: white;
-}
-
-.inversed .top-line {
-  background-color: #15ad9e;
-}
-
-.inversed h3 {
-  color: white;
-}
-
-.inversed h4 {
-  color: white;
-}
-
 .inversed .h4-video-subtitle {
   color: white;
 }
@@ -171,69 +336,9 @@ video {
   color: black;
 }
 
-.circle {
-  opacity: 0;
-  transform: scale(0);
-  font-weight: bold;
-  font-style: italic;
-  border-radius: 100%;
-  position: absolute;
-  background: #15ad9e;
-  border-color: 1px solid black;
-  width: 60px;
-  height: 60px;
-  margin: 10px 10px;
-  top: 40%;
-  left: 13px;
-  text-align: center;
-  color: #fff;
-  font-size: 10px;
-  line-height: 16px;
-  cursor: pointer;
-  transition: ease-in-out 0.8s;
-  box-shadow: 2px 1px 4px #363636;
-  animation: pulse 4s infinite;
-}
-
-.circle a {
-  color: white;
-  text-decoration: none;
-}
-.circle:hover {
-  cursor: default;
-  transform: scale(1.02);
-}
-
-.circle:active {
-  transform: scale(0.98);
-  transition: ease-in-out 50ms;
-}
-
-.circle-text {
-  width: 55px;
-  margin: 15px;
-  text-align: center;
-  z-index: 1;
-}
-
-@keyframes pulse {
-  0% {
-    background-color: #15ad9e;
-    transform: scale(1);
-  }
-  50% {
-    background-color: #ffffff;
-    transform: scale(0.95);
-  }
-
-  100% {
-    background-color: #15ad9e;
-    transform: scale(1);
-  }
-}
-
 .invert {
-  all: unset;
+  visibility: hidden;
+  display: none;
   position: absolute;
   border: none;
   text-align: center;
@@ -246,15 +351,9 @@ video {
   outline: 0;
 }
 
-.app-container {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 40px;
-}
-
 .full-width-web {
   width: 100%;
+  z-index: 90009;
 }
 
 .clear {
@@ -280,9 +379,9 @@ video {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bolder;
-  margin-top: 100px;
+  margin-top: 17vh;
   margin-bottom: -10px;
   padding: 5px;
   transition: all ease-in-out 200ms;
@@ -297,8 +396,8 @@ video {
 
 .h4-project-subtitle {
   font-weight: lighter;
-  font-size: 18px;
-  margin-top: 6px;
+  font-size: 14px;
+  margin-top: 8px;
   margin-bottom: 0px;
 }
 
@@ -320,7 +419,7 @@ a.button {
   padding: 5px 10px;
   opacity: 1;
   z-index: 1.5;
-  font-size: 60%;
+  font-size: 10px;
   top: 76%;
   position: absolute;
   right: auto;
@@ -337,11 +436,12 @@ a.button:hover {
 
 .grid {
   box-shadow: 1px 1px 4px grey;
+  border: none !important;
   display: inline-block;
   overflow: hidden;
   float: none;
   margin: 5px;
-  width: 35%;
+  width: 100%;
   max-width: 1200px;
   list-style: none;
   text-align: center;
@@ -383,8 +483,8 @@ a.button:hover {
 
 .outer-box-l-1 {
   display: inline-block;
-  margin: 0px 8px 40px 8px;
-  width: 35%;
+  margin-bottom: 40px;
+  width: 45%;
   max-width: 1200px;
   list-style: none;
   text-align: center;
@@ -401,8 +501,8 @@ a.button:hover {
 
 .outer-box-l-2 {
   display: inline-block;
-  margin: 0px 8px 40px 8px;
-  width: 35%;
+  margin-bottom: 40px;
+  width: 45%;
   max-width: 1200px;
   list-style: none;
   text-align: center;
@@ -419,8 +519,8 @@ a.button:hover {
 
 .outer-box-r-1 {
   display: inline-block;
-  margin: 0px 8px 40px 8px;
-  width: 35%;
+  margin-bottom: 40px;
+  width: 45%;
   max-width: 1200px;
   list-style: none;
   text-align: center;
@@ -437,8 +537,8 @@ a.button:hover {
 
 .outer-box-r-2 {
   display: inline-block;
-  margin: 0px 8px 40px 8px;
-  width: 35%;
+  margin-bottom: 40px;
+  width: 45%;
   max-width: 1200px;
   list-style: none;
   text-align: center;
@@ -451,6 +551,10 @@ a.button:hover {
 .outer-box-r-2.visible {
   transform: translate(0, 0);
   opacity: 1;
+}
+
+.slidebox {
+  font-size: 2px;
 }
 
 .grid .double-height {
@@ -563,6 +667,7 @@ a.button:hover {
 }
 .grid figure:hover p {
   opacity: 1;
+  font-size: 10px;
 }
 .grid figure h2,
 .grid figure figcaption > span {
@@ -781,15 +886,17 @@ figure.effect-slideright:hover h2 {
   transform: translate3d(0, 0, 0);
 }
 
-.container {
-  width: 70%;
+.progress-bar-container {
+  width: 65%;
+  float: right;
+  padding-top: 12vh;
   margin: 0 auto;
   opacity: 0;
   transform: translate(0, 220px);
   transition: all 0.5s;
 }
 
-.container.visible {
+.progress-bar-container.visible {
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -901,10 +1008,46 @@ figure.effect-slideright:hover h2 {
     margin-right: auto;
     font-size: 50px;
     font-weight: bolder;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: -10px;
     padding: 5px;
     transition: all ease-in-out 200ms;
+  }
+
+  .title-box-web {
+    display: inline-block;
+    width: 90%;
+    margin-right: 5vw;
+    height: 20vh;
+  }
+
+  .title-box-skills {
+    display: inline-block;
+    width: 90%;
+    height: 20vh;
+    margin-left: 5vw;
+  }
+
+  .progress-bar-container {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    height: 65vh;
+  }
+
+  video {
+    width: 90vw;
+  }
+
+  .see-more-box {
+    width: 20vw;
+  }
+
+  .project-box {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    height: 65vh;
   }
 
   .outer-box {
@@ -974,11 +1117,6 @@ figure.effect-slideright:hover h2 {
   }
 
   .hr-blog {
-    visibility: hidden;
-    display: none;
-  }
-
-  .title-box-skills {
     visibility: hidden;
     display: none;
   }

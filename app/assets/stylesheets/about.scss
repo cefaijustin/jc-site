@@ -60,16 +60,17 @@
   position: absolute;
   border: none;
   outline: none;
-  background-color: black;
+  background-color: transparent;
   top: 18px;
   left: 30px;
   font-size: 44px;
   color: #15ad93;
   cursor: pointer;
   transition: all 0.4s;
+  z-index: 900;
 
   &:hover {
-    color: white;
+    color: #dce2e6;
     transform: scaleX(1.1);
   }
 }
@@ -79,6 +80,14 @@
   top: -80px;
   left: 20px;
   transform: scale(0.5);
+  display: block;
+  float: left;
+}
+
+.bio-image-new {
+  position: absolute;
+  top: -96px;
+  transform: scale(0.6);
   display: block;
   float: left;
 }

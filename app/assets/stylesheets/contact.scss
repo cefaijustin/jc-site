@@ -1,14 +1,15 @@
 .background-contact {
-  background-color: black;
+  background-color: white;
   position: relative;
   z-index: 1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  align-content: center;
-  width: 100% !important;
-  height: 100vh;
+  width: 100vw;
+  height: 35vh;
+}
+
+.hr-contact {
+  width: 50vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
 }
 
 .say-hi {
@@ -21,32 +22,27 @@
   transition: all 0.3s;
 }
 
-.say-hi-l {
+.say-hi-text {
   float: none;
-  color: #fff;
-  font-size: 110px;
-  margin-bottom: -8%;
-  -webkit-transform: translate(-520px, 0);
-  transform: translate(-520px, 0);
+  color: black;
+  font-weight: lighter;
+  font-size: 60px;
+  text-align: left;
+  margin: 0 auto;
   transition: all 0.5s;
 }
 
-.say-hi-r {
-  float: none;
-  color: #fff;
-  min-width: 400px;
-  font-size: 110px;
-  -webkit-transform: translate(520px, 0);
-  transform: translate(520px, 0);
-  transition: all 0.5s;
-}
-
-.say-hi-l.visible {
-  transform: translate(0, 0);
-}
-
-.say-hi-r.visible {
-  transform: translate(0, 0);
+.contact-box {
+  font-size: 55px;
+  text-align: center;
+  padding: 15px;
+  width: 85vw;
+  margin-top: 3vh;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  transition: all 0.8s;
 }
 
 // .video {
@@ -346,13 +342,12 @@ p img {
 }
 
 @media (min-width: 250px) and (max-width: 900px) {
-  .background-contact {
-    width: 100%;
-    height: 100vh !important;
-  }
-
   .full-width-contact {
     width: 100%;
+  }
+
+  .background-contact {
+    margin-top: 25vh;
   }
 
   .to-top:before {
@@ -380,18 +375,5 @@ p img {
   .say-hi {
     width: 80%;
     align-content: center;
-  }
-
-  .say-hi-l {
-    position: relative;
-    display: inline-block;
-    font-size: 55px;
-  }
-
-  .say-hi-r {
-    position: relative;
-    display: inline-block;
-    font-size: 55px;
-    min-width: 100px;
   }
 }

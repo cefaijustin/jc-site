@@ -13,6 +13,7 @@
       </div>
 
       <div class="progress-bar-container">
+        
         <div class="progress-bar" data-percentage="80%">
           <h4 class="progress-title-holder">
             <span class="progress-title">HTML</span>   
@@ -21,7 +22,7 @@
             <div class="progress-content"></div>
           </div>
         </div>
-
+      
         <div class="progress-bar" data-percentage="60%">
           <h4 class="progress-title-holder clearfix">
             <span class="progress-title">CSS</span>
@@ -34,15 +35,6 @@
         <div class="progress-bar" data-percentage="65%">
           <h4 class="progress-title-holder clearfix">
             <span class="progress-title">JavaScript</span>
-          </h4>
-          <div class="progress-content-outer">
-            <div class="progress-content"></div>
-          </div>
-        </div>
-
-        <div class="progress-bar" data-percentage="45%">
-          <h4 class="progress-title-holder clearfix">
-            <span class="progress-title">jQuery</span>
           </h4>
           <div class="progress-content-outer">
             <div class="progress-content"></div>
@@ -84,7 +76,7 @@
             <div class="progress-content"></div>
           </div>
         </div>
-  
+
       </div>
     </div>
     
@@ -114,76 +106,52 @@
         </a>
       </div>
     </div>
-    
-    <br class="clear" />
-  </div>
-</div>  
 
 <div class="web_apps_all_bg" id="web-apps-all">
   <button class="close-bg" id="close-bg-web">&times</button>
+  <div class="web_apps_all_bg">
 
-  <div class="web-all-box">
-    <div class="outer-box-l-1">
-      <div class="box grid project">
-        <figure class="effect-slideleft one-half">
+    <div class="project-box-all">
+      <div class="app-half">
+        <a target="_blank" rel="noopener noreferrer" href="https://todo-justin-cefai.herokuapp.com/">
           <%= image_tag "todo-compressor.png", alt: "todo app", class: "full-width-web" %>
-          <figcaption>
-            <h2>Todo<br><span>Application</span></h2>
-            <p>JavaScript, Ruby on Rails, JQuery, HTML, CSS, PostgreSQL</p><br><br>
-            <a target="_blank" rel="noopener noreferrer" href="https://todo-justin-cefai.herokuapp.com/" class="button">View</a>
-          </figcaption>     
-        </figure>
+        </a>  
       </div>
       <h4 class="h4-project-subtitle">to-do application</h4>
     </div>
 
-    <div class="outer-box-r-1">
-      <div class="box grid project">
-        <figure class="effect-slideleft one-half">
+    <div class="project-box-all">
+      <div class="app-half">
+        <a target="_blank" rel="noopener noreferrer" href="http://nomster-justin-cefai.herokuapp.com/">
           <%= image_tag "nomster-compressor.png", alt: "instagram clone", class: "full-width-web" %>
-          <figcaption>
-            <h2>Yelp<br><span>Clone</span></h2>
-            <p>Google Maps API, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS
-            </p>
-            <a target="_blank" rel="noopener noreferrer" href="http://nomster-justin-cefai.herokuapp.com/" class="button">View</a>
-          </figcaption>     
-        </figure>
+        </a>
       </div>
-      <h4 class="h4-project-subtitle">yelp clone</h4>
+      <h4 class="h4-project-subtitle">yelp clone</h4>  
     </div>
 
-    <br class="clear" />
-
-    <div class="outer-box-l-2">
-      <div class="box grid project">
-        <figure class="effect-slideleft one-half">
+    <div class="project-box-all">
+      <div class="app-half">
+        <a target="_blank" rel="noopener noreferrer" href="http://flixter-justin-cefai.herokuapp.com/">
           <%= image_tag "flixter-compressor.png", alt: "flixter app", class: "full-width-web" %>
-          <figcaption>
-            <h2>Two-Sided<br><span>Market Place</span></h2>
-            <p>Devise, Carrierwave, Stripe, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS</p><br><br>
-            <a target="_blank" rel="noopener noreferrer" href="http://flixter-justin-cefai.herokuapp.com/"></a>
-          </figcaption>     
-        </figure>
+        </a>  
       </div>
       <h4 class="h4-project-subtitle">two-sided marketplace</h4>
-    </div>
+    </div>  
 
-    <div class="outer-box-r-2">
-      <div class="box grid project">
-        <figure class="effect-slideleft one-half">
+    <div class="project-box-all">
+      <div class="app-half">
+        <a target="_blank" rel="noopener noreferrer" href="http://grammable-justin-cefai.herokuapp.com/">
           <%= image_tag "grammable-compressor.png", alt: "grammable app", class: "full-width-web" %>
-          <figcaption>
-            <h2>Instagram<br><span>Clone</span></h2>
-            <p>FactoryBot, Ruby, Ruby on Rails, PostgreSQL, HTML, CSS, built using test driven development</p><br><br>
-            <a target="_blank" rel="noopener noreferrer" href="http://grammable-justin-cefai.herokuapp.com/" class="button">View</a>
-          </figcaption>     
-        </figure>
+        </a>
       </div>
       <h4 class="h4-project-subtitle">instagram clone</h4>
-    </div> 
-  </div>  
+    </div>  
+  </div>
 </div>
-
+    
+    <br class="clear" />
+  </div>
+</div>  
 <script>
 
 $(document).ready(function() {
