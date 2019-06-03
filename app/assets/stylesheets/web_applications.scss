@@ -912,13 +912,13 @@ figure.effect-slideright:hover h2 {
   position: relative;
   margin: 5px 17.5%;
   text-align: left;
-  line-height: 15px;
+  line-height: 12px;
   color: #2e2e2e;
 }
 
 .progress-title {
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -1018,13 +1018,13 @@ figure.effect-slideright:hover h2 {
     display: inline-block;
     width: 90%;
     margin-right: 5vw;
-    height: 20vh;
+    height: 25vh;
   }
 
   .title-box-skills {
     display: inline-block;
     width: 90%;
-    height: 20vh;
+    height: 25vh;
     margin-left: 5vw;
   }
 
@@ -1048,6 +1048,7 @@ figure.effect-slideright:hover h2 {
     display: inline-block;
     width: 100%;
     height: 65vh;
+    margin-top: 7vh;
   }
 
   .outer-box {
@@ -1099,6 +1100,10 @@ figure.effect-slideright:hover h2 {
 
   .container {
     width: 100%;
+  }
+
+  .h4-see-more {
+    margin: -5px;
   }
 }
 
