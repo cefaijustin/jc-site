@@ -205,7 +205,7 @@
 .rightsidenav {
   //background-image: linear-gradient(to right, #dbdcdd, #f2f3f4);
   height: 100%;
-  width: 130px;
+  width: 5vw;
   position: fixed;
   z-index: 0;
   top: 0;
@@ -332,22 +332,44 @@ video {
   color: white;
 }
 
+.inversed .hr-contact {
+  visibility: hidden;
+  display: none;
+}
+
 .inversed .grid figure p {
   color: black;
 }
 
+.inversed nav a {
+  color: white;
+}
+
+.inversed .progress-title-holder {
+  color: white;
+}
+
+.inversed .about-container {
+  background-color: black;
+}
+
+.inversed .background-contact {
+  background-color: black;
+}
+
+.inversed .h4-contact {
+  color: white;
+}
+
 .invert {
-  visibility: hidden;
-  display: none;
   position: absolute;
   border: none;
   text-align: center;
   top: 2px;
-  right: 34px;
+  right: 1.2vw;
   color: #15ad9e;
   font-size: 18px;
   cursor: pointer;
-  background: none;
   outline: 0;
 }
 
@@ -887,10 +909,10 @@ figure.effect-slideright:hover h2 {
 }
 
 .progress-bar-container {
-  width: 65%;
+  width: 45vw;
   float: right;
   padding-top: 12vh;
-  margin: 0 auto;
+  margin-right: 10vw;
   opacity: 0;
   transform: translate(0, 220px);
   transition: all 0.5s;
@@ -903,6 +925,7 @@ figure.effect-slideright:hover h2 {
 
 .progress-bar {
   position: relative;
+  width: 45vw;
   padding: 5px;
   overflow: hidden;
 }
@@ -910,7 +933,7 @@ figure.effect-slideright:hover h2 {
 .progress-title-holder {
   padding-bottom: 5px;
   position: relative;
-  margin: 5px 17.5%;
+  margin: 5px 1px;
   text-align: left;
   line-height: 12px;
   color: #2e2e2e;
@@ -923,7 +946,7 @@ figure.effect-slideright:hover h2 {
 }
 
 .progress-content-outer {
-  width: 65%;
+  width: 45vw;
   height: 18px;
   padding: 5px;
   box-sizing: border-box;
@@ -1056,7 +1079,9 @@ figure.effect-slideright:hover h2 {
   }
 
   .invert {
-    display: none;
+    background-color: red;
+    width: 25px;
+    height: 15px;
   }
 
   .web_apps_all_bg {
