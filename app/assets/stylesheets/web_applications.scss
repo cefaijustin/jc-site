@@ -975,6 +975,133 @@ figure.effect-slideright:hover h2 {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background-color: #15ad9e;
+  transition: all 3s;
+}
+
+.progress-content-html {
+  position: relative;
+  width: 0;
+  height: 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #15ad9e;
+  transition: all 3s;
+}
+
+.progress-content-html.visible {
+  width: 80%;
+}
+
+.progress-content-css {
+  position: relative;
+  width: 0;
+  height: 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #15ad9e;
+  transition: all 3s;
+}
+
+.progress-content-css.visible {
+  width: 60%;
+}
+
+.progress-content-js {
+  position: relative;
+  width: 0;
+  height: 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #15ad9e;
+  transition: all 3s;
+}
+
+.progress-content-js.visible {
+  width: 65%;
+}
+
+.progress-content-rails {
+  position: relative;
+  width: 0;
+  height: 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #15ad9e;
+  transition: all 3s;
+}
+
+.progress-content-rails.visible {
+  width: 60%;
+}
+
+.progress-content-react {
+  position: relative;
+  width: 0;
+  height: 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #15ad9e;
+  transition: all 3s;
+}
+
+.progress-content-react.visible {
+  width: 35%;
+}
+
+.progress-content-postgres {
+  position: relative;
+  width: 0;
+  height: 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #15ad9e;
+  transition: all 3s;
+}
+
+.progress-content-postgres.visible {
+  width: 50%;
+}
+
+.progress-content-ps {
+  position: relative;
+  width: 0;
+  height: 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #15ad9e;
+  transition: all 3s;
+}
+
+.progress-content-ps.visible {
+  width: 65%;
 }
 
 /* MEDIA SCREEN SIZES */

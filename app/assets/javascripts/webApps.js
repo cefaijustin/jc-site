@@ -121,12 +121,87 @@ document.addEventListener("turbolinks:load", function() {
     }
   });
 
-  function progress(percent, $element) {
-    var progressBarWidth = (percent * $element.width()) / 100;
-    $element
-      .find("div")
-      .animate({ width: progressBarWidth }, 500)
-      .html(percent + "% ");
-  }
-  progress(80, $("#progressBar"));
+  $(window).scroll(function() {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height();
+    var tag = $(".progress-content-html");
+
+    if ($(tag).position().top < sB) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  });
+
+  $(window).scroll(function() {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height();
+    var tag = $(".progress-content-css");
+
+    if ($(tag).position().top < sB) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  });
+
+  $(window).scroll(function() {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height();
+    var tag = $(".progress-content-js");
+
+    if ($(tag).position().top < sB) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  });
+
+  $(window).scroll(function() {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height();
+    var tag = $(".progress-content-rails");
+
+    if ($(tag).position().top < sB) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  });
+
+  $(window).scroll(function() {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height();
+    var tag = $(".progress-content-react");
+
+    if ($(tag).position().top < sB) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  });
+
+  $(window).scroll(function() {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height();
+    var tag = $(".progress-content-postgres");
+
+    if ($(tag).position().top < sB) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  });
+
+  $(window).scroll(function() {
+    var sT = $(this).scrollTop();
+    var sB = sT + $(window).height();
+    var tag = $(".progress-content-ps");
+
+    if ($(tag).position().top < sB) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  });
 });
