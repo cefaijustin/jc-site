@@ -162,6 +162,7 @@
 .title-box-skills {
   background-color: #f4f4dc;
   width: 30%;
+  max-width: 400px;
   height: 75vh;
   margin-left: 5vw;
   margin-top: 5vh;
@@ -242,7 +243,7 @@
 
 video {
   width: 45vw;
-  max-width: 535px;
+  max-width: 650px;
   height: auto;
   box-shadow: 1px 1px 5px grey;
 }
@@ -267,6 +268,7 @@ video {
 .title-box-web {
   background-color: #f3f3dc;
   width: 30%;
+  max-width: 500px;
   height: 70vh;
   float: right;
   margin-top: 15vh;
@@ -320,6 +322,14 @@ video {
   background-color: black;
 }
 
+.inversed .h4-subtitle-cert {
+  color: white;
+}
+
+.inversed .h4-subtitle-blog {
+  color: white;
+}
+
 .inversed .background-skills {
   background-color: black;
 }
@@ -366,10 +376,10 @@ video {
   border: none;
   background-color: transparent;
   text-align: center;
-  top: 2px;
-  right: 1.2vw;
+  top: -5px;
+  right: 1.3vw;
   color: #15ad9e;
-  font-size: 18px;
+  font-size: 25px;
   cursor: pointer;
   outline: 0;
 }
@@ -959,7 +969,7 @@ figure.effect-slideright:hover h2 {
   background-clip: padding-box;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5px;
+  margin-bottom: 1vh;
   position: relative;
   background-color: #363636;
 }
