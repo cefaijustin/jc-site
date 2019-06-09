@@ -7,7 +7,7 @@ document.addEventListener("turbolinks:load", function() {
         d = $(document).height(),
         c = $(this).height();
 
-      scrollPercent = (s / (d - c)) * 8;
+      scrollPercent = (s / (d - c)) * 3;
 
       var position =
         scrollPercent * ($(document).width() - $horizontal.width());
