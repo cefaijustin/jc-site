@@ -88,6 +88,86 @@
   transform: translate(0, 0);
 }
 
+.cert-fh-bg {
+  position: absolute;
+  background-color: white;
+  background-size: cover;
+  padding-top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.cert-fh-bg.visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+.cert-js-bg {
+  position: absolute;
+  background-color: white;
+  background-size: cover;
+  padding-top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.cert-js-bg.visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+.cert-al-bg {
+  position: absolute;
+  background-color: white;
+  background-size: cover;
+  padding-top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.cert-al-bg.visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+.cert-sh-bg {
+  position: absolute;
+  background-color: white;
+  background-size: cover;
+  padding-top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.cert-sh-bg.visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
 .grid-sub {
   box-shadow: 1px 1px 4px grey;
   display: inline-block;
@@ -130,6 +210,12 @@
     transform: translate(-1px, -2px);
     box-shadow: 1px 2px 6px black;
   }
+}
+
+.cert-large {
+  width: 60vw;
+  height: auto;
+  box-shadow: 2px 2px 17px #363636;
 }
 
 .h4-subtitle-cert {

@@ -7,7 +7,7 @@
   <div class="cert-container">
     <div class="cert-container-1">
       <div class="box1 grid-sub">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.switchup.org/bootcamps/the-firehose-project">
+        <a id="cert-fh-bg" href="#fh-cert-full"> 
           <%= image_tag "firehose.jpg", alt: "firehose bootcamp", class: "full-width-cert"%>
         </a>    
       </div>
@@ -17,7 +17,7 @@
 
     <div class="cert-container-1">
         <div class="box1 grid-sub">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/understand-javascript/">
+          <a id="cert-js-bg" href="#js-cert-full">
             <%= image_tag "udemy-js-compressor.jpg", alt: "udemy javascript", class: "full-width-cert" %>
           </a>
         </div>
@@ -27,7 +27,7 @@
 
     <div class="cert-container-2">
         <div class="box1 grid-sub">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/">
+          <a id="cert-al-bg" href="#al-cert-full">
             <%= image_tag "udemy-algos-compressor.jpg", alt: "udemy algorithms", class: "full-width-cert" %>
           </a>
         </div>
@@ -37,7 +37,7 @@
 
     <div class="cert-container-2">
         <div class="box1 grid-sub">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/build-a-shopify-theme-from-scratch/">
+          <a id="cert-sh-bg" href="#sh-cert-full">
             <%= image_tag "udemy-shopify-compressor.jpg", alt: "udemy shopify", class: "full-width-cert"%>
           </a>
         </div>
@@ -46,6 +46,24 @@
     </div>
   </div>  
 
-  
+  <div class="cert-fh-bg" id="fh-cert-full">
+    <button class="close-bg" id="close-bg-cert">&times</button>
+    <%= image_tag "firehose.jpg", alt: "firehose bootcamp", class: "cert-large"%>
+  </div>
+
+  <div class="cert-js-bg" id="js-cert-full">
+    <button class="close-bg" id="close-bg-cert1">&times</button>
+    <%= image_tag "udemy-js-compressor.jpg", alt: "udemy javascript", class: "cert-large" %>
+  </div>
+
+  <div class="cert-al-bg" id="al-cert-full">
+    <button class="close-bg" id="close-bg-cert2">&times</button>
+    <%= image_tag "udemy-algos-compressor.jpg", alt: "udemy algorithms", class: "cert-large" %>
+  </div>
+
+  <div class="cert-sh-bg" id="sh-cert-full">
+    <button class="close-bg" id="close-bg-cert3">&times</button>
+    <%= image_tag "udemy-shopify-compressor.jpg", alt: "udemy shopify", class: "cert-large"%>
+  </div>
 </div>  
 
