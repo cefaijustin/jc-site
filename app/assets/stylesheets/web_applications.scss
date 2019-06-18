@@ -45,11 +45,11 @@
   transform-style: preserve-3d;
   backface-visibility: hidden;
   box-shadow: 1px 1px 3px black;
-  opacity: 0.8;
+  opacity: 0.9;
+  vertical-align: middle;
 
   &:hover {
-    filter: opacity(0.95);
-    transform: translate(-1px, -2px);
+    transform: translate(-1px, -2px) scale(1.03);
     box-shadow: 1px 2px 6px black;
     opacity: 1;
   }
@@ -397,6 +397,7 @@ video {
 .full-width-web {
   width: 100%;
   z-index: 90009;
+  vertical-align: middle;
 }
 
 .clear {
@@ -1192,12 +1193,14 @@ figure.effect-slideright:hover h2 {
   .title-box-web {
     display: inline-block;
     width: 90%;
+    max-width: 1000px;
     margin-right: 5vw;
     height: 25vh;
   }
   .title-box-skills {
     display: inline-block;
     width: 90%;
+    max-width: 1000px;
     height: 25vh;
     margin-left: 5vw;
   }

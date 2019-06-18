@@ -155,27 +155,9 @@
 <script>
 
 $(document).ready(function() {
-
-    $(".invert").click(function() {
-      var $this = $(this);
-      $("html").toggleClass("inversed");
-      $this.toggleClass("invert");
-      if ($this.hasClass("invert")) {
-        $this.html("<i class='far fa-lightbulb'></i>");
-      } else {
-        $this.html("<i class='far fa-lightbulb'></i>").css({
-          'cursor': "pointer",
-          'color': "#15ad9e",
-          "font-size": "25px",
-          'bottom': "auto",
-          'outline-color': "black",
-          'left': "1.3vw",
-          'top': "20px",
-          "background-color": "transparent",
-          'border': "none",
-          'transition': 'ease 1s'
-        });
-      }
-    });
+  $(".invert").click(function() {
+    $("html").toggleClass("inversed");      
   });
-  </script>
+});
+
+</script>
