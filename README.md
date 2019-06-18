@@ -1,5 +1,5 @@
 # This is my personal website.  
 
-Built with HTML, CSS / Sass, & jQuery.  
+Built with HTML, CSS / Sass, & jQuery.  Also featuring Typed.js & Google Fonts.  
 
-I also use Typed.js and GoogleFonts.
+Thanks for visiting! 
